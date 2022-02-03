@@ -1,0 +1,103 @@
+        @font-face {
+            font-family:'begum';
+            src: url('begum.woff2') format('woff2'), 
+            url('begum.woff') format('woff');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;;
+                src: url();
+        }
+        @font-face {
+            font-family: 'gotham';
+            src: url('Gotham-Bold.woff2') format('woff2'),
+                url('gothambold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'gotham-light';
+            src: url('gotham-light.woff2') format('woff2'),
+                url('gothamlight.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }        
+        
+        
+        body{
+            margin:0;
+            background-color: black;
+        }
+
+        .twitter{
+            margin-left: 39%;
+            margin-top: 5%;
+        }
+
+        .text{
+            color: white;
+            font-size: 40px;
+            font-family: 'gotham';
+            margin-left: 9%;
+            margin-top: 5%;
+            margin-right: 10%;
+            text-align: center;
+
+    
+        }
+
+        .whatif{
+            color: white;
+            font-size: 200px;
+            font-family: 'gotham';
+            margin-left: 2%;
+            margin-top: 5%;
+        }
+
+        .funky-cursor {
+            cursor: url(dots.png), auto;
+          }
+
+          a:link, a:visited {
+            background-color: transparent;
+            color: white;
+            padding: 15px 32px;
+            -webkit-transition-duration: 0.4s;
+           transition-duration: 0.4s;
+           text-decoration: none;
+           font-size: 30px;
+           cursor: pointer;
+           font-family: 'gotham-light';
+           display: inline-block;
+           margin-left: 2%;
+
+          }
+        
+        a.ex1:hover, a.ex1:active {
+            color: green;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            color: green;
+        }
+
+        .button{
+            font-family:'gotham-light';        
+        }
+
+        .introduce{
+            font-family:'gotham-light';       
+            font-size: 50px;
+            color: white;
+            align-items: center;
+            margin: 6%;
+        }
+
+        .spot{
+            color: green;
+            font-size: 90px;
+        }
+
+
