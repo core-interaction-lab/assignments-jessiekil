@@ -1,0 +1,25 @@
+body{
+    background-color: powderblue;
+    display: block;
+}
+html{
+    font-size: 24px;
+}
+
+h2{
+
+}
+.post{
+    padding:1rem; 
+    /* top and bottm */
+}
+
+.container{
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.post--small{
+    font-size: 10px;
+}

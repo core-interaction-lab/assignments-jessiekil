@@ -32,24 +32,6 @@ body{
 }
 
 
-.text{
-    color: white;
-    font-size: 40px;
-    font-family: 'gotham';
-    margin-left: 9%;
-    margin-top: 5%;
-    margin-right: 10%;
-    text-align: center;
-}
-
-.whatif{
-    color: white;
-    font-size: 200px;
-    font-family: 'gotham';
-    margin-left: 2%;
-    margin-top: 5%;
-}
-
 .funky-cursor {
     cursor: url(dot.png), auto;
   }
@@ -68,30 +50,11 @@ body{
 
   }
 
-a.spot:hover, a.spot:active {
-    color: green;
-}
-
-a.ex2:hover, a.ex2:active {
+a.jessie:hover, a.jessie:active {
     color: green;
 }
 
 .button{
     font-family:'gotham-light';  
     font-size: 30px;      }
-
-.introduce{
-    font-family:'gotham-light';       
-    font-size: 35px;
-    color: white;
-    align-items: center;
-    margin: 6%;
-    margin-left: 8%;
-}
-
-.spot{
-    color: green;
-    font-size: 40px;
-}
-
 
