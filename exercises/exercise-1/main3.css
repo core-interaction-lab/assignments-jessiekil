@@ -32,24 +32,6 @@ body{
 }
 
 
-.text{
-    color: white;
-    font-size: 40px;
-    font-family: 'gotham';
-    margin-left: 9%;
-    margin-top: 5%;
-    margin-right: 10%;
-    text-align: center;
-}
-
-.whatif{
-    color: white;
-    font-size: 200px;
-    font-family: 'gotham';
-    margin-left: 2%;
-    margin-top: 5%;
-}
-
 .funky-cursor {
     cursor: url(dot.png), auto;
   }
@@ -68,30 +50,39 @@ body{
 
   }
 
-a.spot:hover, a.spot:active {
+a.ex2:hover, a.ex2:active {
     color: green;
 }
 
-a.ex2:hover, a.ex2:active {
-    color: green;
+.aboutme{
+    color: white;
+    font-size: 30px;
+    font-family: 'gotham-light';
+    margin-left: 9%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 3%;
 }
 
 .button{
     font-family:'gotham-light';  
     font-size: 30px;      }
 
-.introduce{
-    font-family:'gotham-light';       
-    font-size: 40px;
-    color: white;
-    align-items: center;
-    margin: 6%;
-    margin-left: 8%;
+img{
+    margin-left: 34%;
+    margin-top: 1%;
+    border-radius: 6%;
 }
-
-.spot{
+.port{
+    color: darkgreen;
+    font-size: 30px;
+    font-family: 'gotham-light';
+    margin-top: 5%;
+    margin-left:19%;
+    margin-right: 18%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+a.portfolio:hover, a.portfolio:active {
     color: green;
-    font-size: 40px;
 }
-
-

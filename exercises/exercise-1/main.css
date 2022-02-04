@@ -31,23 +31,42 @@
             background-color: black;
         }
 
-        .twitter{
+        h1{
             margin-left: 39%;
-            margin-top: 5%;
+            margin-top: 7.5%;
+            border: none;
+            color: white;
+            padding: 0px 22px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: green;
+            font-family: 'gotham';
+            font-size: 50px;
+            border-radius: 33px;
+            height: 69px;
+            width: 250px;
         }
+
+        h1:hover {
+            color: green;
+            background-color: transparent;
+          }
 
         .text{
             color: white;
             font-size: 40px;
-            font-family: 'gotham';
             margin-left: 9%;
             margin-top: 5%;
             margin-right: 10%;
             text-align: center;
-
-    
         }
 
+        .intro{
+            font-family: 'gotham-light';
+        }
         .whatif{
             color: white;
             font-size: 200px;
@@ -57,7 +76,7 @@
         }
 
         .funky-cursor {
-            cursor: url(dots.png), auto;
+            cursor: url(dot.png), auto;
           }
 
           a:link, a:visited {
@@ -67,14 +86,14 @@
             -webkit-transition-duration: 0.4s;
            transition-duration: 0.4s;
            text-decoration: none;
-           font-size: 30px;
+           font-size: 33px;
            cursor: pointer;
            font-family: 'gotham-light';
            display: inline-block;
            margin-left: 2%;
 
           }
-        
+    
         a.ex1:hover, a.ex1:active {
             color: green;
         }
@@ -83,6 +102,9 @@
             color: green;
         }
 
+        a.jessie:hover, a.jessie:active {
+            color: green;
+        }
         .button{
             font-family:'gotham-light';        
         }
