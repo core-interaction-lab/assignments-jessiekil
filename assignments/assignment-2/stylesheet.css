@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Value Serif Pro';
+    src: url('ValueSerifPro-Medium.woff2') format('woff2'),
+        url('ValueSerifPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url('BasisGrotesquePro-Medium.woff2') format('woff2'),
+        url('BasisGrotesquePro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url('BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Value Serif Pro';
+    src: url('ValueSerifPro-Regular.woff2') format('woff2'),
+        url('ValueSerifPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

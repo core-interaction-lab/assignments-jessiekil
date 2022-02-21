@@ -1,0 +1,40 @@
+html.body{
+    min-height: 100%;
+}
+
+body{
+    background-color: url({https://www.solidbackgrounds.com/images/website/950x534/950x534-little-green-leaves-free-website-background-image.jpg) center center no-repeat;
+    background-position:top center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action h1{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.call-to-action a {
+    background: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+@media (min-width: 813px) {
+    .call-to-action h1{
+        font-size: 80px;
+
+    }
+}

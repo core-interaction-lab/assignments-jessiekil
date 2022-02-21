@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    flex-grow: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    flex-direction:row ;
+    justify-content: flex-end;
+}
+/* for dis play if I put block it will show as a list */
+
+.menu ul li{
+    margin: 0 1rem;
+}
+
+.primary-header{
+    display: flex;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.post{
+    overflow: auto ;
+    width: 48%;  
+    padding: 1 rem;
+}
