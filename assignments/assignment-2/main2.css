@@ -95,7 +95,7 @@ a{
 .imgfilters1 img {
     filter: none;
     max-width: 140%;
-    float: center;
+    float: left;
     padding-top: 10px;
     align-content: center;
     padding-bottom: -10%;
