@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'inter';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'belle';
+    src: url('Bellefair-Regular.woff2') format('woff2'),
+        url('Bellefair-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #333B9B;
+    margin: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.slider {
+    max-width: 1000px;
+    padding: 300px 300px;
+    padding-top: 100px;
+    margin: auto;
+    font-weight: 40;
+    color: #F4C460;
+    font-family: 'belle';
+    font-size: 25px;
+  }  
+
+h1{
+font-family: extrabold;
+color: #F4C460;
+font-size: 70px;
+margin-left: 560px;
+margin-top: 40px;
+}
+
