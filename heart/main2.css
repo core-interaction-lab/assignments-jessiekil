@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'inter';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'belle';
+    src: url('Bellefair-Regular.woff2') format('woff2'),
+        url('Bellefair-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333B9B;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .wrapper {
+    flex: 1;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    overflow: scroll;
+    margin-top: -30vh;
+
+  }
+  
+  .section {
+    opacity: 0;
+    transition: 0.3s opacity ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+  }
+  
+  .section--active {
+    opacity: 1;
+  }
+  
+  .slider-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+  .slider-container input {
+    width: 100%;
+    display: block;
+  }
+  
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    font-family:'inter' ;
+    color: #F4C460;
+    font-style: 15vh;
+  }
+
+p{
+    color: #F4C460;
+    font-family: 'Bellefair-Regular';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    }
+
+h1{
+    font-family: 'extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: #F4C460;
+}
+
+img{
+    max-width: 20vh;
+    padding: 2vh;
+}
+
+/* HEART STARTS */
+
+  .heart-container {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    animation: 10.5s ease 0s infinite pulse;
+  }
+  
+  .box-heart {
+    height: 100%;
+    max-height: 400px;
+
+  }
+  
+  #heart {
+    height: 100%;
+    margin-left: 220vh;
+    animation: 7.0s ease 0s infinite beat;
+  }
+  
+  @keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    30%, 80% { transform: scale(0.92, 0.95); }
+  }
+  
+  @keyframes pulse {
+    0%, 50%, 100% {  background: none; }
+    30%, 80% { background: none; }
+  }
+    /* 1st heart ends */

@@ -7,14 +7,33 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
         <body>
+
+            <div class="container">
+              <div class="box">
+              <img src="heart-1.png" alt="img" id="heart">
+              </div>
+            </div>
+
+            <div class="container2">
+              <div class="box2">
+              <img src="heart-2.png" alt="img" id="heart2">
+              </div>
+            </div>
+              
+
             <header class="text1">
                 <body>
+                  <div class="slidecontainer">
+                    <p>Default range slider:</p>
+                    <input type="range" min="1" max="100" value="50">
+                  </div>
+
                     <div class="title">
                     <h1>resting</h1>
                     </div>
                 </div>
 
-                <div class="slider">
+                <div class="slider-text">
   
                     <a href="#slide-1">1</a>
                     <a href="#slide-2">2</a>
@@ -123,6 +142,14 @@
                       </div>
                     </div>
                 </div>
-            <footer>Designed and Created by Jessie Kil</footer>
+            <footer>
+              <input type="range" value="0" min="0" max="4" step="1" list="my-detents">
+              <datalist id="my-detents">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+              </datalist>
+          </footer>
         </body>
         </html>

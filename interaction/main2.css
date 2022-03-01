@@ -45,8 +45,8 @@ body{
     background-size: cover;
     box-sizing: border-box;
 }
-
-.slider {
+/* 
+.slider-text {
     max-width: 1000px;
     padding: 300px 300px;
     padding-top: 100px;
@@ -65,3 +65,110 @@ margin-left: 560px;
 margin-top: 40px;
 }
 
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  } */
+
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+    /* 1st heart */
+
+  .container {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    animation: 1.5s ease 0s infinite pulse;
+  }
+  
+  .box {
+    height: 25%;
+    max-height: 400px;
+  }
+  
+  #heart {
+    height: 100%;
+    margin-left: 220vh;
+    animation: 5.0s ease 0s infinite beat;
+  }
+  
+  @keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    30%, 80% { transform: scale(0.92, 0.95); }
+  }
+  
+  @keyframes pulse {
+    0%, 50%, 100% {  background: none; }
+    30%, 80% { background: none; }
+  }
+    /* 1st heart ends */
+
+    /* 2nd heart */
+  .container2 {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    animation: 1.0s ease 0s infinite pulse;
+  }
+  
+  .box2{
+    height: 25%;
+    max-height: 400px;
+  }
+  
+  #heart2 {
+    height: 100%;
+    margin-left: 120vh;
+    animation: 1.5s ease 0s infinite beat;
+  }
+  
+  @keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    30%, 80% { transform: scale(0.92, 0.95); }
+  }
+  
+  @keyframes pulse {
+    0%, 50%, 100% {  background: none; }
+    30%, 80% { background: none; }
+  }
+     /* 2nd heart ends */
