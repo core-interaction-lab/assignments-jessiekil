@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'inter';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'belle';
+    src: url('Bellefair-Regular.woff2') format('woff2'),
+        url('Bellefair-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #333B9B;
+    margin: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+.four{
+font-family: 'extrabold';
+color: #F4C460;
+font-size: 40vw;
+margin-left: 19vh;
+}
+
+.imgfilters img {
+ width: 20%;
+ position: absolute;
+ top: 44%;
+}
+
+.stages{
+    font-family: 'inter';
+    color: #F4C460;
+    font-size: 11vh;
+    margin-top: 1vh ;
+    margin-right: 10vh;
+}
+
+.wrapper{
+    display:flex ;
+    padding-right: 4vh;
+}
+
+.bigwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* HEART STARTS */
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .box-heart {
+        max-height: 300px;
+      }
+      
+      #heart2 {
+        height: 65%;
+        margin-left: auto;
+        animation: 2.5s ease 0s infinite beat;
+      }
+      
+      @keyframes beat {
+        0%, 50%, 100% { transform: scale(1, 1); }
+        30%, 80% { transform: scale(0.92, 0.95); }
+      }
+      
+      @keyframes pulse {
+        0%, 50%, 100% {  background: none; }
+        30%, 80% { background: none; }
+      }
+
+      img{
+        margin-top: 23vh;
+      }
+
+      h2{
+        display:inline;
+        float:left;
+        font-family: 'inter';
+        font-size: 5vh;
+        margin-top: 1vh;
+        margin-left: 2vh; 
+        text-decoration: none;
+
+        }
+    h3{
+        display:inline;
+        float:right;
+        font-family: 'inter';
+        font-size: 5vh;
+        margin-top: 1vh;
+        margin-right: 2vh;
+        color: white;
+        }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #F4C460;
+      }
