@@ -1,0 +1,59 @@
+        @font-face {
+            font-family:'begum';
+            src: url('begum.woff2') format('woff2'), 
+            url('begum.woff') format('woff');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;;
+                src: url();
+        }
+        @font-face {
+            font-family: 'gotham';
+            src: url('Gotham-Bold.woff2') format('woff2'),
+                url('gothambold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'gotham-light';
+            src: url('gotham-light.woff2') format('woff2'),
+                url('gothamlight.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }        
+        
+        
+        body{
+            margin:0;
+            background-color: white;
+
+        }
+
+        .joon{
+            font-family: gotham;
+            font-size: 35px;
+            margin-left: 37%;
+            margin-top: 3%;
+        }
+        .intro{
+            font-family:'gotham-light';       
+            font-size: 30px;
+            color: black;
+            align-items: center;
+            margin: 6%;
+        }
+
+        .pay{
+            text-decoration: none;
+            font-family: gotham;
+            color: blue;
+            margin-left: 37%;
+            font-size: 50px;
+        }
+
+        .button{
+            text-decoration: none;
+            color: black;        }

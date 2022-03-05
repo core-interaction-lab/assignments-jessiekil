@@ -66,6 +66,7 @@ margin-left: 19vh;
     font-size: 11vh;
     margin-top: 1vh ;
     margin-right: 10vh;
+    line-height: 99%;
 }
 
 .wrapper{
@@ -112,30 +113,46 @@ margin-left: 19vh;
         margin-top: 23vh;
       }
 
-      h2{
+    .menu{
         display:inline;
         float:left;
-        font-family: 'inter';
-        font-size: 5vh;
+        font-size: 3vh;
         margin-top: 1vh;
         margin-left: 2vh; 
         text-decoration: none;
 
         }
-    h3{
+    .menu2{
         display:inline;
         float:right;
-        font-family: 'inter';
-        font-size: 5vh;
+        font-size: 3vh;
         margin-top: 1vh;
         margin-right: 2vh;
-        color: white;
         }
 
-    a:link{
+    a{
+        color: #F4C460;
+        font-family: 'inter';
         text-decoration: none;
     }
+    a:link{
+        text-decoration: none;
 
-    a:hover {
+    }
+    a:visited {
         color: #F4C460;
-      }
+        font-family: 'inter';
+        text-decoration: none;
+    }
+    a:hover {
+        color: #FF85D5;
+        font-family: 'inter';
+        text-decoration: none;
+    }
+    
+    a:active{
+        color: #F4C460;
+        font-family: 'inter';
+        text-decoration: none;
+
+    }
