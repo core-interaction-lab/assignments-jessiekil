@@ -150,8 +150,7 @@ img{
   
   #heart {
     height: 100%;
-    margin-left: 220vh;
-    margin-left: 0;
+    margin-top: -2vh;
     animation: 7.0s ease 0s infinite beat;
   }
   
@@ -191,3 +190,13 @@ img{
       -webkit-transition: .2s;
       transition: opacity .2s;
     } */
+
+
+    @media screen and (min-width: 50px) and (max-width: 600px) {
+      img {margin-top: 2vh; max-width:20% ; height: auto ;}
+      .slider-container {max-width: 350px; height: auto;}
+      .numbers {font-size: 18px;}
+      .wrapper{width: 60%;}
+      #heart {margin-right: 0vh; max-width: 12vh; height: auto; margin-top: -1vh;}
+      p{font-size: 18px;}
+    }
