@@ -52,17 +52,6 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  
-  .wrapper {
-    flex: 1;
-    width: 50%;
-    margin: 0 auto;
-    position: relative;
-    overflow: scroll;
-    margin-top: -32.4vh;
-    margin-top: 0;
-
-  }
 
   h2 {
     position: absolute;
@@ -74,10 +63,21 @@ body {
     transition: 0.3s opacity ease;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
     height: auto;
     overflow-y: scroll;
+  
+  }
+ .wrapper {
+    flex: 1;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: scroll;
+    margin-top: 0;
+
   }
   
   .section--active {
@@ -104,7 +104,6 @@ body {
     font-size: 22px;
     margin-bottom: 5vh;
     line-height: 26px;
-
   }
 
 p{
@@ -124,6 +123,14 @@ h1{
     text-align: center;
     color: #F4C460;
     margin-top:-6vh;
+}
+
+.pagetitle{
+  display: none;
+}
+
+.pagetitle--active{
+  display: block;
 }
 
 img{
@@ -148,23 +155,23 @@ img{
 
   }
   
-  #heart {
+  .heart {
     height: 100%;
     margin-top: -2vh;
     animation: 7.0s ease 0s infinite beat;
   }
   
   .heart--section-1 {
-    animation: 4.0s ease 0s infinite beat;
+    animation: 5.5s ease 0s infinite beat;
   }
   .heart--section-2 {
-    animation: 1.0s ease 0s infinite beat;
+    animation: 3.5s ease 0s infinite beat;
   }
   .heart--section-3 {
-    animation: 0.5s ease 0s infinite beat;
+    animation: 1.5s ease 0s infinite beat;
   }
   .heart--section-4 {
-    animation: 0.1s ease 0s infinite beat;
+    animation: 1.0s ease 0s infinite beat;
   }
 
   @keyframes beat {
@@ -192,11 +199,13 @@ img{
     } */
 
 
-    @media screen and (min-width: 50px) and (max-width: 600px) {
-      img {margin-top: 2vh; max-width:20% ; height: auto ;}
+   
+    @media screen and (min-width: 30px) and (max-width: 600px) {
+      img {margin-top: 2vh; max-width:20% ; height: auto;}
       .slider-container {max-width: 350px; height: auto;}
       .numbers {font-size: 18px;}
-      .wrapper{width: 60%;}
-      #heart {margin-right: 0vh; max-width: 12vh; height: auto; margin-top: -1vh;}
+      .wrapper{width: 110%;}
+      #heartbeat {margin-right: 0vh; max-width: 12vh; height: auto; margin-top: -1vh; left:80%}
       p{font-size: 18px;}
+      h1{margin-top:2vh;}
     }
