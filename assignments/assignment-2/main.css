@@ -46,8 +46,9 @@ h1{
     flex-grow: 1;
     font-family: 'basis-medium';
     text-align: left;
-    font-size: 60px;    
-    margin-left: 2%;
+    font-size: 50px;    
+    margin-left: 1%;
+    margin-bottom: 0%;
 }
 a{
     color: black;
@@ -85,7 +86,8 @@ a{
 .primary-header{
     display: flex;
     margin-top: -3%;
-    background-color: #E8F385;}
+    background-color: #E8F385;
+    flex-direction: column;}
 
 .posts{
     display: flex;
@@ -101,6 +103,10 @@ a{
     padding-bottom: -10%;
     display: block;
 }
+
+.imgfilters1{
+    position: relative;
+}
     
   
   .imgfilters1 img:hover {
@@ -115,8 +121,8 @@ a{
 
 p{
     font-family: 'value-regular';
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 19px;
 }
 
@@ -128,7 +134,7 @@ h2{
 
 footer{
     font-family: 'value-medium';
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     padding: 50px;
     background-color: #E8F385;
@@ -140,7 +146,7 @@ h3{
     font-size: 100px;
     text-align: left;
     margin-left: 2%;
-    margin-bottom: -20%;
+    margin-bottom: 0%;
     margin-right: 50%;
     color: #E8F385;
     position: absolute;
@@ -150,9 +156,9 @@ h3{
 
 .imgfilters2 img {
     filter: none;
-    max-width: 100%;
+    max-width: 70%;
     float: left;
-    margin-left: -43%;
+    margin-left: 0%;
     margin-bottom: 10%;
     margin-top: 12%;
     padding-right: 40px;
@@ -171,4 +177,17 @@ h3{
     padding: 5%;
     text-align: justify;
     margin-top: 10%;
+    ;
 }
+
+
+@media screen and (min-width: 50px) and (max-width: 700px) {
+    .imgfilters2 {font-size: 3.5vh; margin-right: 0vh; margin-left: 1.5vh; margin-top: 0vh;}
+    .imgfilters2 img {float: none; display: block; margin: auto; margin-top: 5%;}
+    h2{font-size: 4vh;}
+    p{font-size: 2vh;}
+    h4{font-size: 2vh; margin-right: auto; margin-left: auto;}
+    h3{font-size: 6vh;margin-bottom: 0%; margin-top: 0%;}
+    .imgfilters1{position: relative;}
+
+  }

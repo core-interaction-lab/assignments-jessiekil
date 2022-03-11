@@ -85,7 +85,8 @@ a{
 .primary-header{
     display: flex;
     margin-top: -3%;
-    background-color: #E8F385;}
+    background-color: #E8F385;
+    flex-direction: column;}
 
 .posts{
     display: flex;
@@ -100,9 +101,9 @@ a{
     align-content: center;
     display: inline-block;
     margin-bottom: 3%;
+    margin-left: 30%;
 
 }
-    
   
   .imgfilters1 img:hover {
     cursor: pointer;
@@ -116,8 +117,8 @@ a{
 
 p{
     font-family: 'basis-regular';
-    margin-left: 24%;
-    margin-right: 24%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 22px;
     display: inline-block;
 }
@@ -130,9 +131,15 @@ h2{
 
 footer{
     font-family: 'value-medium';
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     padding: 50px;
-    background-color: black;
+    background-color: transparent;
     color: hsl(240°, 100% 90%);
+}
+
+@media screen and (min-width: 50px) and (max-width: 700px) {
+    .imgfilters1 {margin-left: 0%; position: relative; max-width: 50%;}
+    h2{font-size: 4.5vh;}
+    p{font-size: 2vh ;}
 }
