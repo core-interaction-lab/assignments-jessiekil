@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #95dbe5;
+    margin: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.title{
+    color: #ff5d09;
+    font-size: 20vh;
+    text-align: center;
+    margin-top: 9%;
+    font-family: Helvetica;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 17.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .wrapper{
+    margin-left: 15%;
+}
+

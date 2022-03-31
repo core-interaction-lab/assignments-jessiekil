@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #ea3343;
+    margin: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.title{
+    color: rgb(133, 191, 230);
+    font-size: 13vh;
+    text-align: left;
+}
+
+.rectangle {
+    height: 590px;
+    width: 400px;
+    background-color: white;
+    margin-left: 34%;
+    float: left;
+  }
+
+  .rectangle2 {
+    height: 450px;
+    width: 300px;
+    background-color: lightgrey;
+    float: inherit;
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+
+
+  .rectangle3 {
+    height: 450px;
+    width: 300px;
+    background-color: lightgrey;
+    float: inline-start;
+    margin-top: -31.5%;
+    margin-left: 66%;
+  }
