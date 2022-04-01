@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'extrabold';
+    src: url('BeVietnamPro-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'inter';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'belle';
+    src: url('Bellefair-Regular.woff2') format('woff2'),
+        url('Bellefair-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.box{
+    background-color: white ;
+    max-width: 100%;
+}
+
+
+.title{
+    font-family: 'inter';
+    color: pink;
+    font-size: 120px;
+    margin-top: 10px;
+    text-align: center;
+
+    
+}
+
+.genre{
+    color: rgb(108, 108, 108);
+    text-align: center;
+    font-family: 'extrabold';
+    font-size: 20px;
+
+}
+
+.description{
+    color: rgb(152, 152, 152);
+    text-align: center;
+}
+
+.imdb{
+    color: rgb(152, 152, 152);
+    text-align: center;
+    margin-left: 47%;
+    text-decoration: none;
+    font-family: 'inter';
+}
+
+.date{
+    color: rgb(152, 152, 152);
+    text-align: center;
+    font-size: 20px;
+
+}

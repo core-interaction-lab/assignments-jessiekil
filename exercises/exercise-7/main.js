@@ -1,53 +1,60 @@
 const fetchMovies = async () => {
-    const response = await fetch("https://api.airtable.com/v0/appNJ2QuWNO4giGFK/Table%201?api_key=keyyl7BUgBJhsZRv3").then(data => data.json());
-    
+    const response = await fetch('https://api.airtable.com/v0/appdSJjQGEIEy5Zl3/Table%201?api_key=keyyl7BUgBJhsZRv3').then(data => data.json());
+
     console.log(response);
 
     const moviesContainer = document.getElementById('movies-container');
 
     response.records.forEach(movie => {
         console.log(movie.fields);
-        const NameEl =document.createElement('Name');
-        const YearEl = document.createElement('div');
-        const GenreEl = document.createElement('div');
-        const LinkEl = document.createElement('a');
-        const ReleaseDateEl = document.createElement('div');
+        const articleEl = document.createElement('article');
+        const titleEl = document.createElement('div');
+        const genreEl = document.createElement('div');
+        const imdbUrlEl = document.createElement('a');
+        const releaseDateEl = document.createElement('div');
+        const descriptionEl = document.createElement ('p');
+        const posterEl = document.createElement ('img');
 
-        TitleEl.innerHTML = movie.fields.Title;
-        GenreEl.innerHTML = movie.fields.Genre;
+        articleEl.classList.add('box');
+        titleEl.classList.add('title');
+        genreEl.classList.add('genre');
+        imdbUrlEl.classList.add('imdb');
+        releaseDateEl.classList.add('date');
+        descriptionEl.classList.add('description');
 
-        LinkEl.href = movie.fields.Link;
-        LinkEl.target = "_blank";
-        LinkEl.classList.add('Link');
 
-        LinkEl.innerHTML = "IMDB page";
 
-        articleEl.append(TitleEl, GenreEl, ReleaseDateEl, LinkEl);
 
-        ReleaseDateEl.innerHTML = movie.fields.ReleaseDate;
+        titleEl.innerHTML = movie.fields.title;
+        genreEl.innerHTML = movie.fields.genre;
+        descriptionEl.innerHTML = movie.fields.description;
+        // posterEl.src = movie.fields.poster.url;
+
+        imdbUrlEl.href = movie.fields.imdb_url;
+        imdbUrlEl.target = "_blank";
+        imdbUrlEl.classList.add('imdb-link');
+
+        imdbUrlEl.innerHTML = "IMDB Page";
+        releaseDateEl.innerHTML = movie.fields.release_date;
+
+        articleEl.append(titleEl, genreEl, imdbUrlEl, releaseDateEl);
 
         moviesContainer.appendChild(articleEl);
     });
 
-    const linkTags = document.querySelectorAll('.Link');
+    const linkTags = document.querySelectorAll('.imdb-link');
     console.log(linkTags);
     linkTags.forEach((link, index) => {
-        const linkColor =link.style.color;
-        link.id = 'my-link-${index+1}';
+        const linkColor = link.style.color;
+        link.id = `my-link-${index + 1}`;
         link.addEventListener('mouseover', (evt) => {
-            link.style.color= "pink";
+            link.style.color = "#fc2ead";
         });
 
-        link.addEventListener('mouseout',evt => {
-            link.style.color= linkColor;
-        })
+        link.addEventListener('mouseout', evt => {
+            link.style.color = linkColor;
+        });
     });
 };
 
 fetchMovies();
-
-
-
-// {} = means new function
-// article EL means article elements
-// same exact space, capital letters for field titles
