@@ -5,6 +5,8 @@ const fetchMovies = async () => {
 
     const moviesContainer = document.getElementById('movies-container');
 
+
+    // Telling javascript what the const is
     response.records.forEach(movie => {
         console.log(movie.fields);
         const articleEl = document.createElement('article');
@@ -15,16 +17,20 @@ const fetchMovies = async () => {
         const descriptionEl = document.createElement ('p');
         const posterEl = document.createElement ('img');
 
+
+        // THESE ARE CLASSES, so you can add CSS values
         articleEl.classList.add('box');
         titleEl.classList.add('title');
         genreEl.classList.add('genre');
         imdbUrlEl.classList.add('imdb');
         releaseDateEl.classList.add('date');
         descriptionEl.classList.add('description');
+        posterEl.classList.add('images');
 
 
 
-
+        console.log(movie.fields.poster[0].url);
+        posterEl.src= movie.fields.poster[0].url;
         titleEl.innerHTML = movie.fields.title;
         genreEl.innerHTML = movie.fields.genre;
         descriptionEl.innerHTML = movie.fields.description;
@@ -37,8 +43,9 @@ const fetchMovies = async () => {
         imdbUrlEl.innerHTML = "IMDB Page";
         releaseDateEl.innerHTML = movie.fields.release_date;
 
-        articleEl.append(titleEl, genreEl, imdbUrlEl, releaseDateEl);
 
+// CALL IT
+        articleEl.append(titleEl, genreEl, imdbUrlEl, releaseDateEl, descriptionEl, posterEl);
         moviesContainer.appendChild(articleEl);
     });
 

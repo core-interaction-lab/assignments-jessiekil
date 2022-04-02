@@ -58,13 +58,6 @@ const fetchTitle = async () => {
             container.append(yearEl);
         }
 
-        if(title.fields.emotions) {
-            const emotionsEl = document.createElement('p');
-            emotionsEl.innerHTML = title.fields.emotions;
-            emotionsEl.classList.add('emotions');
-            container.append(emotionsEl);
-        }
-
         // and so on. Also, P stands for paragraph for paragraph text elements. 
     });
 };
