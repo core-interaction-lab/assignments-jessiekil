@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'regular';
+    src: url('BaiJamjuree-Regular.woff2') format('woff2'),
+        url('BaiJamjuree-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'medium';
+    src: url('BaiJamjuree-Medium.woff2') format('woff2'),
+        url('BaiJamjuree-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'bold';
+    src: url('BaiJamjuree-Bold.woff2') format('woff2'),
+        url('BaiJamjuree-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body{
+    background-color: #4D5A40;
+}
+
+.first_title{
+    font-family: 'medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 69px;
+    letter-spacing: -0.011em;
+    color: #50ED7C;
+    margin-bottom: -4vh;
+}
+
+.second_title{
+    position: absolute;
+    font-family: 'bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 180px;
+    letter-spacing: -0.011em;
+    color: #50ED7C;
+}
+
+.poster-disgust{
+    max-width: 20%;
+    margin-left: 40%;
+    margin-top: 14%;
+}
+
