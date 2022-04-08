@@ -72,6 +72,7 @@ const buildSlide = (anime) => {
         const posterImg = document.createElement('img');
         posterImg.src = anime.fields.poster [0].url;
         posterImg.classList.add('poster-disgust');
+
         animeContainer.append(posterImg);
     }
     if (anime.fields.release_date){
