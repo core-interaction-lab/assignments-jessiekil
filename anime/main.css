@@ -86,11 +86,10 @@ letter-spacing: -0.065em;
     margin-left: 15%;
 }
 
-#redball{
+#redball, #greenball{
   width:1px;
   height: 160px;
   position: relative;
-  background-image: url('red.png');
+  margin-bottom: -50%;
+  /* background-image: url('red.png'); */
 }
-
-

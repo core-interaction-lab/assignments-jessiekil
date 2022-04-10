@@ -10,71 +10,78 @@ const db = {
   const prevButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   
-  const fetchMovies = async () => {
+  const fetchAnimes = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     // console.log(response);
-    buildSlideshow(response.records);
+    const happyEmotions = response.records.filter(emotion =>{
+        return emotion.fields.emotions === "happy";
+    });
+    console.log(happyEmotions);
+    buildSlideshow(happyEmotions);
     return response.records;
   };
   
-  const buildSlideshow = (movies) => {
+  const buildSlideshow = (animes) => {
     let leftI = 0;
     let rightI = 6;
   
-    const articles = movies.slice(0, 7).map(buildSlide);
-    slideshowContainer.append(...articles);
-  
+    const articles = animes.slice(0, 7).map(buildSlide);
+    //slideshowContainer.append(...articles);
+    //const firstAnime = buildSlide(animes[0]);
+    const firstAnime = animes.slice(0,7).map(buildSlide);
+    slideshowContainer.append(...firstAnime);
+
     prevButton.addEventListener('click', () => {
         leftI += 1;
         rightI += 1;
-        if (rightI >= movies.length) {
+        if (rightI >= animes.length) {
             rightI = 0;
         }
-        if (leftI >= movies.length) {
+        if (leftI >= animes.length) {
             leftI = 0;
         }
         slideshowContainer.removeChild(slideshowContainer.children[0]);
-        slideshowContainer.append(buildSlide(movies[rightI]));
+        slideshowContainer.append(buildSlide(animes[rightI]));
     });
   
     nextButton.addEventListener('click', () => {
         leftI -= 1;
         rightI -= 1;
         if (leftI < 0) {
-            leftI = movies.length - 1;
+            leftI = animes.length - 1;
         }
         if (rightI < 0) {
-            rightI = movies.length - 1;
+            rightI = animes.length - 1;
         }
         slideshowContainer.removeChild(slideshowContainer.querySelectorAll('article')[6]);
-        slideshowContainer.prepend(buildSlide(movies[leftI]));
+        slideshowContainer.prepend(buildSlide(animes[leftI]));
     });
   };
   
-  const buildSlide = (movie) => {
-    const movieContainer = document.createElement('article');
-    if (movie.fields.poster) {
-        // console.log(movie.fields.poster[0].url);
+  const buildSlide = (anime) => {
+    const animeContainer = document.createElement('article');
+    if (anime.fields.poster) {
+        // console.log(anime.fields.poster[0].url);
         const posterImg = document.createElement('img');
-        posterImg.src = movie.fields.poster[0].url;
+        posterImg.src = anime.fields.poster[0].url;
         posterImg.classList.add('poster-img', 'dlkjfdl');
         posterImg.id = 'poster-img-id';
-        movieContainer.append(posterImg);
+        animeContainer.append(posterImg);
     }
-    if (movie.fields.release_date) {
-        // console.log(movie.fields.release_date);
+    if (anime.fields.release_date) {
+        // console.log(anime.fields.release_date);
     }
   
-    if (movie.fields.description) {
+    if (anime.fields.description) {
         const descriptionEl = document.createElement('p');
-        descriptionEl.innerHTML = movie.fields.description;
-        descriptionEl.classList.add('movie-description');
-        movieContainer.append(descriptionEl);
+        descriptionEl.innerHTML = anime.fields.description;
+        descriptionEl.classList.add('anime-description');
+        animeContainer.append(descriptionEl);
     }
-    return movieContainer;
+    return animeContainer;
   };
   
-  fetchMovies();
+  fetchAnimes();
   
   
   
