@@ -86,10 +86,31 @@ letter-spacing: -0.065em;
     margin-left: 15%;
 }
 
-#redball, #greenball{
+.guides{
+  font-family: "medium";
+  color: #3A3A3A;
+  font-size: 40px;
+}
+#redball{
   width:1px;
   height: 160px;
   position: relative;
   margin-bottom: -50%;
+  margin-left: 10%;
   /* background-image: url('red.png'); */
+}
+
+#greenball{
+  width:1px;
+  height: 160px;
+  position: absolute;
+  margin-bottom: -30%;
+  margin-left: 10%;
+}
+
+#blueball{
+  width:1px;
+  height: 160px;
+  margin-bottom: 10%;
+  margin-left: 20%;
 }
