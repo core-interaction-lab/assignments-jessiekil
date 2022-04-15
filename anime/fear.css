@@ -26,7 +26,7 @@
   }
 * {
     box-sizing: border-box;
-    background-color: #F6AC55;
+    background-color: #330A33;
   }
   img {
     max-width: 100%;
@@ -44,27 +44,27 @@
   }
   
   #prev{
-    background-color:#FFEE59;
+    background-color:#BD00FF;
     position: absolute;
-    color: #F6AC55;
+    color: #330A33;
     border:none; 
     border-radius:50%; 
     min-height:100px; 
     min-width: 100px;
-    box-shadow: 1px 1px 2px #FFEE59, 0 0 25px #FFEE59, 0 0 5px #FFEE59;
+    box-shadow: 1px 1px 2px #BD00FF, 0 0 25px #BD00FF, 0 0 5px #BD00FF;
     margin-left: 4%;
     margin-top: 5%;
   }  
 
   #next{
-    background-color:#FFEE59;
+    background-color:#BD00FF;
     position: absolute;
-    color: #F6AC55;
+    color: #330A33;
     border:none; 
     border-radius:50%; 
     min-height:100px; 
     min-width: 100px;
-    box-shadow: 1px 1px 2px #FFEE59, 0 0 25px #FFEE59, 0 0 5px #FFEE59;
+    box-shadow: 1px 1px 2px #BD00FF, 0 0 25px #BD00FF, 0 0 5px #BD00FF;
     margin-left: 88%;
     margin-top: 5.4%;
   }
@@ -101,7 +101,7 @@
     text-decoration: none;  
     margin-bottom: -10%;
     font-style: normal;
-    color: #FFE600;
+    color: #BD00FF;
 }
 
 
@@ -115,7 +115,7 @@ a.change:hover, a.change:active {
     font-weight: 500;
     font-size: 64px;  
     line-height: 103%;
-    color: #FFEE59;
+    color: #BD00FF;
     margin-left: 7%;
     margin-bottom: -1vh;
     margin-top: -4vh;
@@ -130,7 +130,7 @@ a.change:hover, a.change:active {
     line-height: 114px;
     letter-spacing: -0.011em;
     margin-bottom: 5vh;
-    color: #FFEE59;
+    color: #BD00FF;
     margin-left: 7%;
 }
 .funky-cursor {
@@ -138,25 +138,25 @@ a.change:hover, a.change:active {
   }
 
 .left-gradient{
-    background-color: rgb(246,172,85);
+    background-color: #330A33;
     position: absolute;
     left: 0;
     height: 260px;
     width: 200px;
     z-index: 6;
     bottom: 0;
-    background: rgb(246,172,85);
-background: linear-gradient(90deg, rgba(246,172,85,1) 0%, rgba(246,172,85,0.75) 35%, rgba(246,172,85,0) 100%);
+    background: rgb(51,10,51);
+    background: linear-gradient(90deg, rgba(51,10,51,1) 0%, rgba(51,10,51,1) 35%, rgba(51,10,51,0) 100%);
 }
 
 .right-gradient{
-    background-color: rgb(246,172,85);
+    background-color: #330A33;
     position: absolute;
     right: -12px;
     height: 260px;
     width: 200px;
     z-index: 6;
-    bottom: 0;
-    background: rgb(246,172,85);
-    background: linear-gradient(270deg, rgba(246,172,85,1) 0%, rgba(246,172,85,0.75) 35%, rgba(246,172,85,0) 100%);
+    bottom: 0; 
+    background: rgb(51,10,51);
+    background: linear-gradient(270deg, rgba(51,10,51,1) 0%, rgba(51,10,51,1) 35%, rgba(51,10,51,0) 100%);
 }
