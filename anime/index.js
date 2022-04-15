@@ -27,12 +27,12 @@ function moveCircles(){
     redY = h + h * Math.sin(angle * Math.PI / 180);
     blueX = w + w * Math.cos(angle * Math.PI / 120);
     blueY = h + h * Math.sin(angle * Math.PI / 120);
-    purpleX = w + w * Math.cos(angle * Math.PI / 90);
-    purpleY = h + h * Math.sin(angle * Math.PI / 90);
-    yellowX = w + w * Math.cos(angle * Math.PI / 60);
-    yellowY = h + h * Math.sin(angle * Math.PI / 60);
-    greenX = w + w * Math.cos(angle * Math.PI / 45);
-    greenY = h + h * Math.sin(angle * Math.PI / 45);
+    purpleX = w + w * Math.cos(angle * Math.PI / 100);
+    purpleY = h + h * Math.sin(angle * Math.PI / 100);
+    yellowX = w + w * Math.cos(angle * Math.PI / 160);
+    yellowY = h + h * Math.sin(angle * Math.PI / 160);
+    greenX = w + w * Math.cos(angle * Math.PI / 110);
+    greenY = h + h * Math.sin(angle * Math.PI / 110);
     angle++;
     
     redX = redX * speed;
@@ -60,6 +60,7 @@ function moveCircles(){
     if(angle > 360){
         angle = 0;
     }
+
     setTimeout(moveCircles,20); 
     // 20 i can adjust if I want to change second
 }
