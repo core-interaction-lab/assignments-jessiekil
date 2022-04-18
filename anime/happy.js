@@ -95,20 +95,20 @@ posterSelectBtn.addEventListener('click', evt => {
 //   THIS IS WHAT I ADDED TODAY
   const modalContainer = document.getElementById('modal-container'); 
   modalContainer.addEventListener('click', () => {
-     if(modalActive.style.display === "none"){
-         modalActive.style.display = "block";
-     }
-     else{
-         modalActive.style.display = "none";
-     }
-    // leftI += 1;
-    // rightI += 1;
-    // if (rightI >= animes.length) {
-    //     rightI = 0;
-    // }
-    // if (leftI >= animes.length) {
-    //     leftI = 0;
-    // }
+    //  if(modalActive.style.display === "none"){
+    //      modalActive.style.display = "block";
+    //  }
+    //  else{
+    //      modalActive.style.display = "none";
+    //  }
+    leftI += 1;
+    rightI += 1;
+    if (rightI >= animes.length) {
+        rightI = 0;
+    }
+    if (leftI >= animes.length) {
+        leftI = 0;
+    }
     slideshowContainer.removeChild(slideshowContainer.children[0]);
     slideshowContainer.append(buildSlide(animes[rightI]));
 });
