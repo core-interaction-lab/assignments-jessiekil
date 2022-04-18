@@ -160,3 +160,23 @@ background: linear-gradient(90deg, rgba(246,172,85,1) 0%, rgba(246,172,85,0.75) 
     background: rgb(246,172,85);
     background: linear-gradient(270deg, rgba(246,172,85,1) 0%, rgba(246,172,85,0.75) 35%, rgba(246,172,85,0) 100%);
 }
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal_container{
+    position: absolute;
+    color: rgba(246,172,85,0.5);
+}
+
+.modal-active{
+    display: block;
+    opacity: 1;
+    z-index: 999;
+
+}
+

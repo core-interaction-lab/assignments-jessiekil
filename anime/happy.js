@@ -68,6 +68,17 @@ const db = {
         posterImg.id = 'poster-img-id';
         animeContainer.append(posterImg);
     }
+
+// APRIL 18th ADDED
+const modalActive = document.getElementsByClassName("modal-active");
+const posterSelectBtn = document.createElement('button');
+//posterSelectBtn.dataset.movieIndex = index; 
+posterSelectBtn.addEventListener('click', evt => {
+    buildSlideshow(modalActive);
+    //buildSelectedMovie(moviesArray[index]);
+});
+// UNTIL HERE
+
     if (anime.fields.release_date) {
         // console.log(anime.fields.release_date);
     }
@@ -81,6 +92,30 @@ const db = {
     return animeContainer;
   };
   
+//   THIS IS WHAT I ADDED TODAY
+  const modalContainer = document.getElementById('modal-container'); 
+  modalContainer.addEventListener('click', () => {
+     if(modalActive.style.display === "none"){
+         modalActive.style.display = "block";
+     }
+     else{
+         modalActive.style.display = "none";
+     }
+    // leftI += 1;
+    // rightI += 1;
+    // if (rightI >= animes.length) {
+    //     rightI = 0;
+    // }
+    // if (leftI >= animes.length) {
+    //     leftI = 0;
+    // }
+    slideshowContainer.removeChild(slideshowContainer.children[0]);
+    slideshowContainer.append(buildSlide(animes[rightI]));
+});
+
+// UNTIL HERE
+
+
   fetchAnimes();
   
   
