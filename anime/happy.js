@@ -10,10 +10,15 @@ const db = {
   const prevButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   
+  const modalContainer = document.getElementById('modal-container'); 
+  const selectedModalContainer = document.getElementById('anime-circle');
+
+
+  let happyEmotions =[];
   const fetchAnimes = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     // console.log(response);
-    const happyEmotions = response.records.filter(emotion =>{
+    happyEmotions = response.records.filter(emotion =>{
         return emotion.fields.emotions === "happy";
     });
     console.log(happyEmotions);
@@ -60,18 +65,20 @@ const db = {
   
   const buildSlide = (anime) => {
     const animeContainer = document.createElement('article');
+    const posterSelectBtn = document.createElement('button');
     if (anime.fields.poster) {
         // console.log(anime.fields.poster[0].url);
         const posterImg = document.createElement('img');
         posterImg.src = anime.fields.poster[0].url;
         posterImg.classList.add('poster-img', 'dlkjfdl');
         posterImg.id = 'poster-img-id';
-        animeContainer.append(posterImg);
+        animeContainer.append(posterSelectBtn);
+        posterSelectBtn.append(posterImg);
     }
 
 // APRIL 18th ADDED
 const modalActive = document.getElementsByClassName("modal-active");
-const posterSelectBtn = document.createElement('button');
+
 //posterSelectBtn.dataset.movieIndex = index; 
 posterSelectBtn.addEventListener('click', evt => {
     buildSlideshow(modalActive);
@@ -93,24 +100,58 @@ posterSelectBtn.addEventListener('click', evt => {
   };
   
 //   THIS IS WHAT I ADDED TODAY
-  const modalContainer = document.getElementById('modal-container'); 
+  
   modalContainer.addEventListener('click', () => {
-    //  if(modalActive.style.display === "none"){
-    //      modalActive.style.display = "block";
-    //  }
-    //  else{
-    //      modalActive.style.display = "none";
-    //  }
-    leftI += 1;
-    rightI += 1;
-    if (rightI >= animes.length) {
-        rightI = 0;
+
+
+const buildSelectedMovie = anime => {
+    selectedModalContainer.innerHTML = '';
+    if (anime.fields.poster) {
+        const posterImg = document.createElement('img');
+        posterImg.src = anime.fields.poster[0].url;
+        posterImg.classList.add('poster-img');
+        selectedModalContainer.append(posterImg);
     }
-    if (leftI >= animes.length) {
-        leftI = 0;
+
+    if (movie.fields.title) {
+        const titleEl = document.createElement('p');
+        titleEl.innerHTML = `Title:${anime.fields.title}`;
+        selectedModalContainer.append(titleEl);
     }
-    slideshowContainer.removeChild(slideshowContainer.children[0]);
-    slideshowContainer.append(buildSlide(animes[rightI]));
+
+    // yellow: regular text
+    // inside pink : javascript functions
+    // look for anime and bring the titles
+
+    if (movie.fields.year) {
+        const yearEl = document.createElement('p');
+        yearEl.innerHTML = `Year:${anime.fields.year}`;
+        yearEl.classList.add('year');
+        selectedModalContainer.append(yearEl);
+    }
+    
+    if (movie.fields.studio) {
+        const studioEl = document.createElement('p');
+        studioEl.innerHTML = `Studio:${anime.fields.studio}`;
+        studioEl.classList.add('studio');
+        selectedModalContainer.append(studioEl);
+    }
+
+    if (movie.fields.imdb) {
+        const imdbEl = document.createElement('p');
+        imdbEl.innerHTML = `IMDB:${anime.fields.imdb}`;
+        imdbEl.classList.add('imdb');
+        selectedModalContainer.append(imdbEl);
+    }
+
+    if (movie.fields.originality) {
+        const originalityEl = document.createElement('p');
+        originalityEl.innerHTML = `originality:${anime.fields.originality}`;
+        originalityEl.classList.add('originality');
+        selectedModalContainer.append(originalityEl);
+    }
+
+};
 });
 
 // UNTIL HERE
