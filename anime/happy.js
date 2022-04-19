@@ -46,7 +46,7 @@ const db = {
             leftI = 0;
         }
         slideshowContainer.removeChild(slideshowContainer.children[0]);
-        slideshowContainer.append(buildSlide(animes[rightI]));
+        slideshowContainer.append(buildSlide(animes[rightI],rightI));
     });
   
     nextButton.addEventListener('click', () => {
@@ -59,11 +59,11 @@ const db = {
             rightI = animes.length - 1;
         }
         slideshowContainer.removeChild(slideshowContainer.querySelectorAll('article')[6]);
-        slideshowContainer.prepend(buildSlide(animes[leftI]));
+        slideshowContainer.prepend(buildSlide(animes[leftI],leftI));
     });
   };
   
-  const buildSlide = (anime) => {
+  const buildSlide = (anime, index) => {
     const animeContainer = document.createElement('article');
     const posterSelectBtn = document.createElement('button');
     if (anime.fields.poster) {
@@ -74,6 +74,10 @@ const db = {
         posterImg.id = 'poster-img-id';
         animeContainer.append(posterSelectBtn);
         posterSelectBtn.append(posterImg);
+        posterSelectBtn.addEventListener('click', evt => {
+            buildSelectedMovie(happyEmotions[index]);
+        });
+
     }
 
 // APRIL 18th ADDED
@@ -151,6 +155,7 @@ const buildSelectedMovie = anime => {
         selectedModalContainer.append(originalityEl);
     }
 
+    modalContainer.classList.add('modal-active');
 };
 });
 
