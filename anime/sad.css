@@ -24,12 +24,12 @@
     font-style: normal;
     font-display: swap;
   }
-  * {
+* {
     box-sizing: border-box;
     /* background-color: #F6AC55; */
   }
 body{
-    background-color: #330A33;
+    background-color: #1b5285;
 }
   img {
     max-width: 100%;
@@ -47,27 +47,27 @@ body{
   }
   
   #prev{
-    background-color:#BD00FF;
+    background-color: #63dbff;
     position: absolute;
-    color: #330A33;
+    color: #1b5285;
     border:none; 
     border-radius:50%; 
     min-height:100px; 
     min-width: 100px;
-    box-shadow: 1px 1px 2px #BD00FF, 0 0 25px #BD00FF, 0 0 5px #BD00FF;
+    box-shadow: 1px 1px 2px #63dbff, 0 0 25px #63dbff, 0 0 5px #63dbff;
     margin-left: 4%;
     margin-top: 5%;
   }  
 
   #next{
-    background-color:#BD00FF;
+    background-color:#63dbff;
     position: absolute;
-    color: #330A33;
+    color: #1b5285;
     border:none; 
     border-radius:50%; 
     min-height:100px; 
     min-width: 100px;
-    box-shadow: 1px 1px 2px #BD00FF, 0 0 25px #BD00FF, 0 0 5px #BD00FF;
+    box-shadow: 1px 1px 2px #63dbff, 0 0 25px #63dbff, 0 0 5px #63dbff;
     margin-left: 88%;
     margin-top: 5.4%;
   }
@@ -104,7 +104,7 @@ body{
     text-decoration: none;  
     margin-bottom: -10%;
     font-style: normal;
-    color: #BD00FF;
+    color: #63dbff;
 }
 
 
@@ -118,7 +118,7 @@ a.change:hover, a.change:active {
     font-weight: 500;
     font-size: 64px;  
     line-height: 103%;
-    color: #BD00FF;
+    color: #63dbff;
     margin-left: 7%;
     margin-bottom: -1vh;
     margin-top: -4vh;
@@ -133,13 +133,36 @@ a.change:hover, a.change:active {
     line-height: 114px;
     letter-spacing: -0.011em;
     margin-bottom: 5vh;
-    color: #BD00FF;
+    color: #63dbff;
     margin-left: 7%;
 }
 .funky-cursor {
     cursor: url(cursor.png), auto;
   }
 
+.left-gradient{
+    background-color: #1b5285;
+    position: absolute;
+    left: 0;
+    height: 260px;
+    width: 200px;
+    z-index: 6;
+    bottom: 0;
+    background: rgb(27,82,133);
+    background: linear-gradient(90deg, rgba(27,82,133,1) 0%, rgba(27,82,133,0.75) 35%, rgba(27,82,133,0) 100%);
+}
+
+.right-gradient{
+    background-color: #1b5285;
+    position: absolute;
+    right: -12px;
+    height: 260px;
+    width: 200px;
+    z-index: 6;
+    bottom: 0;
+    background: rgb(27,82,133);
+    background: linear-gradient(270deg, rgba(27,82,133,1) 0%, rgba(27,82,133,0.75) 35%, rgba(27,82,133,0) 100%);
+}
 
 #modal-container{
     display: block;
@@ -152,12 +175,12 @@ a.change:hover, a.change:active {
 }
 
 #anime-circle{
-    background-color: #BD00FF;
-    color: #330A33;
+    background-color: #63dbff;
+    color: #F6AC55;
     display: none;
     border:none; 
     border-radius:50%; 
-    box-shadow: 1px 1px 2px #BD00FF, 0 0 25px #BD00FF, 0 0 5px #BD00FF;
+    box-shadow: 1px 1px 2px #63dbff, 0 0 25px #63dbff, 0 0 5px #63dbff;
     height: 689px;
     width: 689px;
     margin: auto;
@@ -167,7 +190,7 @@ a.change:hover, a.change:active {
 
 .circle-title{
     font-family: 'bold' ;
-    color: white;
+    color: #3A3A3A;
     font-size: 36px;
     /* white-space: nowrap;
     overflow: hidden;
@@ -178,34 +201,34 @@ a.change:hover, a.change:active {
 
 .imdb{
     font-family: "medium";
-    color: white;
+    color: #3A3A3A;
     font-size: 25px;
     margin-left: 100px;
 }
 
 .studio{
     font-family: "medium";
-    color: white;
+    color: #3A3A3A;
     font-size: 25px;
     margin-left: 100px;
 }
 
 .originality{
     font-family: "medium";
-    color: white;
+    color: #3A3A3A;
     font-size: 25px;
     margin-left: 100px;
 }
 .medium{
     font-family: "medium";
-    color: white;
+    color: #3A3A3A;
     font-size: 25px;
     margin-left: 100px;
 }
 
 .year{
     font-family: "medium";
-    color: white;
+    color: #3A3A3A;
     font-size: 25px;
     margin-left: 100px;
     margin-top: -270px;
@@ -229,29 +252,4 @@ a.change:hover, a.change:active {
     width: 250px;
     height: 250px;
     padding-left: 7px;
-}
-
-    /* /* #BD00FF  #330A33 */
-.left-gradient{
-    background-color: #330A33;
-    position: absolute;
-    left: 0;
-    height: 260px;
-    width: 200px;
-    z-index: 6;
-    bottom: 0;
-    background: rgb(51,10,51);
-    background: linear-gradient(90deg, rgba(51,10,51,1) 0%, rgba(51,10,51,1) 35%, rgba(51,10,51,0) 100%);
-}
-
-.right-gradient{
-    background-color: #330A33;
-    position: absolute;
-    right: -12px;
-    height: 260px;
-    width: 200px;
-    z-index: 6;
-    bottom: 0; 
-    background: rgb(51,10,51);
-    background: linear-gradient(270deg, rgba(51,10,51,1) 0%, rgba(51,10,51,1) 35%, rgba(51,10,51,0) 100%);
 }

@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="disgust.css">
+        <link rel="icon" href="green.png" type="image/png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Disgust</title>
     </head>
@@ -18,11 +19,18 @@
                 <div class="right-gradient"></div>
             </section>
             <nav class="slideshow-nav">
-                <button id="prev">Previous</button>
-                <button id="next">Next</button>
-                </button>
+                <button id="prev" style="font-family: medium; font-size:25px; position: absolute;">Before</button>
+                <button id="next" style="font-family: medium; font-size:25px">Next</button>
             </nav>
+
+            <!-- THIS IS WHAT I ADDED -->
+            <div id="modal-container">
+                <div class="modal__content" id="anime-circle">Your content</div>
+            </div>
+            <!-- UNTIL HERE -->
         </main>
         <script src="disgust.js"></script>
     </body>
+</div>
+
 </html>

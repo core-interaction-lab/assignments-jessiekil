@@ -66,15 +66,17 @@ const db = {
   const buildSlide = (anime, index) => {
     const animeContainer = document.createElement('article');
     const posterSelectBtn = document.createElement('button');
+    posterSelectBtn.style.all = "unset";
     if (anime.fields.poster) {
         // console.log(anime.fields.poster[0].url);
         const posterImg = document.createElement('img');
         posterImg.src = anime.fields.poster[0].url;
-        posterImg.classList.add('poster-img', 'dlkjfdl');
+        posterImg.classList.add('poster-img');
         posterImg.id = 'poster-img-id';
         animeContainer.append(posterSelectBtn);
         posterSelectBtn.append(posterImg);
         posterSelectBtn.addEventListener('click', evt => {
+            console.log(happyEmotions[index]);
             buildSelectedMovie(happyEmotions[index]);
         });
 
@@ -84,10 +86,10 @@ const db = {
 const modalActive = document.getElementsByClassName("modal-active");
 
 //posterSelectBtn.dataset.movieIndex = index; 
-posterSelectBtn.addEventListener('click', evt => {
-    buildSlideshow(modalActive);
+// posterSelectBtn.addEventListener('click', evt => {
+//     buildSlideshow(modalActive);
     //buildSelectedMovie(moviesArray[index]);
-});
+// });
 // UNTIL HERE
 
     if (anime.fields.release_date) {
@@ -106,49 +108,62 @@ posterSelectBtn.addEventListener('click', evt => {
 //   THIS IS WHAT I ADDED TODAY
   
   modalContainer.addEventListener('click', () => {
-
-
-const buildSelectedMovie = anime => {
+  selectedModalContainer.style.display = "none";
+  modalContainer.style.zIndex = "-1";
+  });
+function buildSelectedMovie(anime) {
+    console.log(anime);
+    selectedModalContainer.style.display = "block";
+    modalContainer.style.zIndex = "1";
     selectedModalContainer.innerHTML = '';
-    if (anime.fields.poster) {
-        const posterImg = document.createElement('img');
-        posterImg.src = anime.fields.poster[0].url;
-        posterImg.classList.add('poster-img');
-        selectedModalContainer.append(posterImg);
-    }
 
-    if (movie.fields.title) {
+    if (anime.fields.title) {
         const titleEl = document.createElement('p');
         titleEl.innerHTML = `Title:${anime.fields.title}`;
+        titleEl.classList.add('circle-title');
         selectedModalContainer.append(titleEl);
     }
 
-    // yellow: regular text
-    // inside pink : javascript functions
-    // look for anime and bring the titles
+    if (anime.fields.poster) {
+        const posterImg = document.createElement('img');
+        posterImg.src = anime.fields.poster[0].url;
+        posterImg.classList.add('circle-image');
+        selectedModalContainer.append(posterImg);
+    }
 
-    if (movie.fields.year) {
+    // // yellow: regular text
+    // // inside pink : javascript functions
+    // // look for anime and bring the titles
+
+    if (anime.fields.year) {
         const yearEl = document.createElement('p');
         yearEl.innerHTML = `Year:${anime.fields.year}`;
         yearEl.classList.add('year');
         selectedModalContainer.append(yearEl);
     }
     
-    if (movie.fields.studio) {
+    if (anime.fields.studio) {
         const studioEl = document.createElement('p');
         studioEl.innerHTML = `Studio:${anime.fields.studio}`;
         studioEl.classList.add('studio');
         selectedModalContainer.append(studioEl);
     }
 
-    if (movie.fields.imdb) {
+    if (anime.fields.medium) {
+        const mediumEl = document.createElement('p');
+        mediumEl.innerHTML = `Medium:${anime.fields.medium}`;
+        mediumEl.classList.add('medium');
+        selectedModalContainer.append(mediumEl);
+    }
+
+    if (anime.fields.imdb) {
         const imdbEl = document.createElement('p');
         imdbEl.innerHTML = `IMDB:${anime.fields.imdb}`;
         imdbEl.classList.add('imdb');
         selectedModalContainer.append(imdbEl);
     }
 
-    if (movie.fields.originality) {
+    if (anime.fields.originality) {
         const originalityEl = document.createElement('p');
         originalityEl.innerHTML = `originality:${anime.fields.originality}`;
         originalityEl.classList.add('originality');
@@ -157,8 +172,7 @@ const buildSelectedMovie = anime => {
 
     modalContainer.classList.add('modal-active');
 };
-});
-
+// });
 // UNTIL HERE
 
 

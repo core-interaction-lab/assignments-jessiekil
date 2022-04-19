@@ -14,15 +14,15 @@ const db = {
   const selectedModalContainer = document.getElementById('anime-circle');
 
 
-  let disgustEmotions =[];
+  let angryEmotions =[];
   const fetchAnimes = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     // console.log(response);
-    disgustEmotions = response.records.filter(emotion =>{
-        return emotion.fields.emotions === "disgust";
+    angryEmotions = response.records.filter(emotion =>{
+        return emotion.fields.emotions === "angry";
     });
-    console.log(disgustEmotions);
-    buildSlideshow(disgustEmotions);
+    console.log(angryEmotions);
+    buildSlideshow(angryEmotions);
     return response.records;
   };
   
@@ -76,8 +76,8 @@ const db = {
         animeContainer.append(posterSelectBtn);
         posterSelectBtn.append(posterImg);
         posterSelectBtn.addEventListener('click', evt => {
-            console.log(disgustEmotions[index]);
-            buildSelectedMovie(disgustEmotions[index]);
+            console.log(angryEmotions[index]);
+            buildSelectedMovie(angryEmotions[index]);
         });
 
     }
@@ -177,4 +177,6 @@ function buildSelectedMovie(anime) {
 
 
   fetchAnimes();
+  
+  
   
