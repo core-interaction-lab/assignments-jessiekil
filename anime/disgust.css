@@ -196,9 +196,8 @@ background: linear-gradient(270deg, rgba(36,46,26,1) 0%, rgba(36,46,26,0.75) 35%
     font-family: 'bold' ;
     color: #3A3A3A;
     font-size: 36px;
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;  */
+    text-align: center;
+    max-width: 372px;
     margin-left: 24%;   
     padding-top: 10%;
 }

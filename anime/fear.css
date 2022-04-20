@@ -169,9 +169,8 @@ a.change:hover, a.change:active {
     font-family: 'bold' ;
     color: white;
     font-size: 36px;
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;  */
+    text-align: center;
+    max-width: 372px;
     margin-left: 24%;   
     padding-top: 10%;
 }

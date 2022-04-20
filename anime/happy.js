@@ -119,7 +119,7 @@ function buildSelectedMovie(anime) {
 
     if (anime.fields.title) {
         const titleEl = document.createElement('p');
-        titleEl.innerHTML = `Title:${anime.fields.title}`;
+        titleEl.innerHTML = `${anime.fields.title}`;
         titleEl.classList.add('circle-title');
         selectedModalContainer.append(titleEl);
     }

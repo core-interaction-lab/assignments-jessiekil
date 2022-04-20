@@ -191,9 +191,8 @@ background: linear-gradient(270deg, rgba(85,16,16,1) 0%, rgba(85,16,16,0.75) 35%
   font-family: 'bold' ;
   color: whitesmoke;
   font-size: 36px;
-  /* white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;  */
+  text-align: center;
+  max-width: 372px;
   margin-left: 24%;   
   padding-top: 10%;
 }

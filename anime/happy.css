@@ -196,6 +196,8 @@ background: linear-gradient(90deg, rgba(246,172,85,1) 0%, rgba(246,172,85,0.75) 
     overflow: hidden;
     text-overflow: clip;  */
     margin-left: 24%;   
+    text-align: center;
+    max-width: 372px;
     padding-top: 10%;
 }
 
