@@ -7,9 +7,18 @@
 <body>
     <script>
     var items = {
-        name: "items"
+        "name": "items",
+        "release_date": "2021-07-30",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:6Idpgkp0xxbQA3Ej1QdsZh"
     }
-        console.log(items)
+
+    items = JSON.stringify(items);
+    items = JSON.parse(items);
+
+        console.log(items,albums)
     </script>
     <!-- <script src="index.json"></script> -->
 
