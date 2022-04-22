@@ -1,65 +1,36 @@
-const fetchContent = async () => {
-    const response = await fetch('https://interactionlab.space/data/assignment-4-1.json').then(data => data.json());
+const songContainer = document.getElementById('song-container');
 
-    console.log(response);
+const fetchContent = (fetchUrl) => {
+    return fetch(fetchUrl).then(data => data.json());
+};
+const htmlDecode = (input) => {
+    const e = document.createElement('div');
+    e.innerHTML = input;
+    return e.innterText;
+}
 
-    const moviesContainer = document.getElementById('movies-container');
+const buildSongs = songs => {
+songs.forEach(item =>{
+    console.log(item);
+    const imgEl = document.createElement('img');
+    imgEl.setAttribute('src', item.images[0].url);
+    songContainer.append(imgEl);
+});
+}
 
-    response.records.forEach(movie => {
-        console.log(movie.fields);
-        const articleEl = document.createElement('article');
-        const titleEl = document.createElement('div');
-        const genreEl = document.createElement('div');
-        const imdbUrlEl = document.createElement('a');
-        const releaseDateEl = document.createElement('div');
-        const descriptionEl = document.createElement ('p');
-        const posterEl = document.createElement ('img');
+const url1 = 'https://interactionlab.space/data/assignment-4-1.json';
 
-
-        // THESE ARE CLASSES, so you can add CSS values
-        articleEl.classList.add('box');
-        titleEl.classList.add('title');
-        genreEl.classList.add('genre');
-        imdbUrlEl.classList.add('imdb');
-        releaseDateEl.classList.add('date');
-        descriptionEl.classList.add('description');
-        posterEl.classList.add('images');
-
-
-
-        console.log(movie.fields.poster[0].url);
-        posterEl.src= movie.fields.poster[0].url;
-        titleEl.innerHTML = movie.fields.title;
-        genreEl.innerHTML = movie.fields.genre;
-        descriptionEl.innerHTML = movie.fields.description;
-        // posterEl.src = movie.fields.poster.url;
-
-        imdbUrlEl.href = movie.fields.imdb_url;
-        imdbUrlEl.target = "_blank";
-        imdbUrlEl.classList.add('imdb-link');
-
-        imdbUrlEl.innerHTML = "IMDB Page";
-        releaseDateEl.innerHTML = movie.fields.release_date;
-
-
-// CALL IT
-        articleEl.append(titleEl, genreEl, imdbUrlEl, releaseDateEl, descriptionEl, posterEl);
-        moviesContainer.appendChild(articleEl);
-    });
-
-    const linkTags = document.querySelectorAll('.imdb-link');
-    console.log(linkTags);
-    linkTags.forEach((link, index) => {
-        const linkColor = link.style.color;
-        link.id = `my-link-${index + 1}`;
-        link.addEventListener('mouseover', (evt) => {
-            link.style.color = "#fc2ead";
-        });
-
-        link.addEventListener('mouseout', evt => {
-            link.style.color = linkColor;
-        });
-    });
+const main = async () => {
+    const response = await fetchContent(url1);
+    console.log (response);
+    buildSongs(response.items);
 };
 
-fetchContent();
+main();
+
+
+
+// 0 means the first one
+// You use [] only with array
+// const buildSongs = songs => {
+// the buildSONG can be any name I want
