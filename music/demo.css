@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'monkeys';
+    src: url('FuturaBT-ExtraBlack.woff2') format('woff2'),
+        url('FuturaBT-ExtraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mess-reg';
+    src: url('Messapia-Regular.woff2') format('woff2'),
+        url('Messapia-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mess-bold';
+    src: url('Messapia-Bold.woff2') format('woff2'),
+        url('Messapia-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Handlee|Pacifico);
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+
+*{
+    box-sizing: border-box;
+}
+.main-wrapper {
+	margin: 30px auto 0;
+	width: 1080px;
+	text-align: center;
+}
+
+.title {
+	font-family: 'monkeys';
+	text-align: center;
+	font-size: 3.2em;
+	color: white;
+	text-shadow: 6px 1px 1px #7b7b7b;
+}
+
+
+.key {
+	display: inline-block;
+	transition: all ease-in-out .042s;
+	position: absolute;
+	background: #eaeaea;
+    font-size: 130px;
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+    color: black;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
+    z-index: 3;
+}
+
+
+.key.kick {
+	top: 200px;
+    right: 300px;
+}
+
+.key.kick2 {
+    top: 200px;
+    right: 480px;
+
+}
+
+.key.snare {
+    top: 200px;
+    right: 660px;
+}
+
+.key.tom-high {
+    top: 200px;
+    left: 270px;
+}
+
+.key.tom-mid {
+    top: 200px;
+    left: 435px;
+}
+
+.key.tom-low {
+    top: 405px;
+    left: 270px;
+}
+
+.key.crash {
+    top: 405px;
+    left: 440px;
+}
+
+.key.ride {
+    top: 405px;
+    right: 660px;
+}
+/* R */
+
+.key.hihat-open {
+    top: 405px;
+    right: 300px;
+}
+/* I */
+
+.key.hihat-close {
+    top: 405px;
+    right: 480px;
+}
+/* K */
+
+.playing {
+	transform: scale(1.15);
+}
+
+.key-map-wrapper {
+	position: absolute;
+    right: 0;
+    top: 0;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.105);
+    width: 250px;
+    z-index: 0;
+}
+
+.key-map-wrapper > h2 {
+	color: #fff;
+	font-family: 'mess-reg';
+	margin-bottom: 35px;
+	border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+/* Guides title */
+
+.key-map-list {
+	list-style: none;
+	color: #fff;
+	text-align: left;
+}
+
+.key-map-list > li {
+	margin-bottom: 25px;
+}
+
+.key-code {
+	color: #444;
+    background-color: #eaeaea;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+}
+
+.key-sound {
+	/* font-size: 1em; */
+	margin-left: 10px;
+	font-family: 'mess-reg';
+	vertical-align: middle;
+}
+
+kbd{
+    font-family: 'mess-reg';
+}
+
+/* guides list font */
+
+
+/* VIDEO BACKGROUND */
+/* 
+#myVideo {
+        position:absolute;
+        z-index:-999;
+        top:0;
+        left:0;
+        width:100%; 
+        height:100vh;
+  } */
+
+/* END VIDEO */
+
+
+/* RECORD ROTATE */
+.rotate {
+    animation: rotation 8s infinite linear;
+    max-width: 200%;
+    margin-left: -70%;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .rotate2 {
+    animation: rotation 8s infinite linear;
+    max-width: 200%;
+    margin-right: -70%;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }  
+/* END OF RECORD ROTATE */
+
+
+/* WRAPPER FOR RECORDS */
+
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* ENDS */
+
+
+/* BUTTON */
+.button1 {
+    color: black;
+    font-family: 'mess-reg';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #fff; 
+    margin-left: 34%;
+    margin-top: -10%;
+
+  }
+.button1:hover {
+    background-color:#FF0099;
+    transition: 0.7s;
+    color: #68FFB7;
+}
+.button2 {
+    color: black;
+    font-family: 'mess-reg';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #fff; 
+    margin-left: 50%;
+    z-index: 4;
+    margin-top: -10%;
+  }
+.button2:hover {
+    background-color:#FF0099;
+    transition: 0.7s;
+    color: #68FFB7;
+}
+/* END OF BUTTON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

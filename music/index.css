@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'monkeys';
+    src: url('FuturaBT-ExtraBlack.woff2') format('woff2'),
+        url('FuturaBT-ExtraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mess-reg';
+    src: url('Messapia-Regular.woff2') format('woff2'),
+        url('Messapia-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mess-bold';
+    src: url('Messapia-Bold.woff2') format('woff2'),
+        url('Messapia-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    background-color: black;
+   }
+
+.title{
+    font-family: 'monkeys';
+    color: white;
+    font-size: 175px;
+    margin-left: 7%;
+    margin-top: 10%;
+}
+
+.button {
+    color: #fff;
+    font-family: 'mess-reg';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-left: 43%;
+    margin-top: 15%;
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #fff; 
+  }
+/* START OF BUTTON HOVER */
+.button:hover {
+    background-color:#FF0099;
+    transition: 0.7s;
+    color: #68FFB7;
+}
