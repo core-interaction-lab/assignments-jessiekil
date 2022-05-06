@@ -54,17 +54,7 @@ body {
 
 .key {
 	display: inline-block;
-	transition: all ease-in-out .042s;
 	position: absolute;
-	background: #eaeaea;
-    font-size: 130px;
-    height: 160px;
-    width: 160px;
-    text-align: center;
-    border-radius: 4px;
-    border: 3px solid #aaa;
-    color: black;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
     z-index: 3;
 }
 
@@ -294,11 +284,78 @@ kbd{
 
 
 
+#svg-container {
+    opacity: 0;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+}
+
+#svg-container.fade-in {
+    opacity: 1;
+    z-index: 999;
+}
+
+#svg-container .svg-rect.animate {
+    animation: 1s ease anim-1;
+}
+
+#svg-container .svg-circ.animate {
+    animation: 1s ease anim-2;
+}
+@keyframes anim-1 {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1.2) rotate(75deg);
+    }
+}
+
+@keyframes anim-2 {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translate(70%, 50%) scale(2.2) rotate(75deg);
+    }
+}
 
 
 
 
+.gif1{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif1-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
 
 
 
+.gif2{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif2-anime;
+}
 
+
+@keyframes gif2-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(3.2);
+    }
+}

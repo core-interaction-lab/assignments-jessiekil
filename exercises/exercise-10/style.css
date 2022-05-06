@@ -1,0 +1,7 @@
+.content{
+    display: flex;
+}
+
+.flex-col{
+flex: 1;
+}
