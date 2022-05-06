@@ -68,3 +68,32 @@ body {
     transition: 0.7s;
     color: #68FFB7;
 }
+
+/* .rotate {
+    animation: rotation 8s infinite linear;
+    max-width: 200%;
+    margin-left: -70%;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .rotate2 {
+    animation: rotation 8s infinite linear;
+    max-width: 200%;
+    margin-right: -70%;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }   */

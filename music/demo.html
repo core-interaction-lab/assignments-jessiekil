@@ -8,36 +8,30 @@
         </head>
 <body>
     <h1 class="title">CREATE YOUR OWN SONG</h1>
+      <main>
+        <audio id="myAudio">
+          <source src="monkeys.mp3" type="audio/mpeg">
+        </audio>
+            
+      <button onclick="playAudio()" type="button" class="button1">Play SONG</button>
+      <button onclick="pauseAudio()" type="button" class="button2">Pause SONG</button> 
 
-    <div class="row">
+      <div class="row">
         <div class="column">
-          <img src="record.png" class="rotate" width="600" height="600">
+          <img src="glowbar.png" alt="img" id="glow" class="greenbar">
         </div>
         <!-- <div class="column">
             <img src="record.png" class="rotate2" width="600" height="600" margin-left="200%">
         </div> -->
       </div>
-      <img src="glowbar.png" alt="img" id="glow" style="max-width: 110%; margin-left: -5%; margin-top: 40%; ">
-    
-
-
-
-<main>
-
-    <audio id="myAudio">
-        <source src="monkeys.mp3" type="audio/mpeg">
-    </audio>
-            
-      <button onclick="playAudio()" type="button" class="button1">Play SONG</button>
-      <button onclick="pauseAudio()" type="button" class="button2">Pause SONG</button> 
-
+    </main>
 
 
       <!-- The video
       <video autoplay src="back.mov" id="myVideo"></video> -->
 
 
-      <section class="main-wrapper">
+      <!-- <section class="main-wrapper">
       <div class="key-map-wrapper">
         <h2>Guides</h2>
         <ul class="key-map-list">
@@ -79,11 +73,95 @@
             <span class="key-sound">Hi-Hat Closed</span>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div class="drum-kit-wrapper">
         <img id="crash-ride" class="crash-cymbal">
         <img id="hihat-top" class="hihat-top-cymbal" >
-        <div data-key="74" class="key snare">
+
+        <!-- new -->
+        <div data-key="65" class="key snare">
+          <!-- <kbd>A</kbd> -->
+        </div>
+        <div data-key="66" class="key snare">
+          <!-- <kbd>B</kbd> -->
+        </div>
+        <div data-key="67" class="key snare">
+          <!-- <kbd>C</kbd> -->
+        </div>
+        <div data-key="68" class="key kick2">
+          <!-- <kbd>D</kbd> -->
+        </div>
+        <div data-key="69" class="key kick">
+          <!-- <kbd>E</kbd> -->
+        </div>
+        <div data-key="70" class="key hihat-close">
+          <!-- <kbd>F</kbd> -->
+        </div>
+        <div data-key="71" class="key hihat-close">
+          <!-- <kbd>G</kbd> -->
+        </div>
+        <div data-key="72" class="key hihat-close">
+          <!-- <kbd>H</kbd> -->
+        </div>
+        <div data-key="73" class="key hihat-open">
+          <!-- <kbd>I</kbd> -->
+        </div>
+        <div data-key="74" class="key hihat-open">
+          <!-- <kbd>J</kbd> -->
+        </div>
+        <div data-key="75" class="key hihat-open">
+          <!-- <kbd>K</kbd> -->
+        </div>
+        <div data-key="76" class="key ride">
+          <!-- <kbd>L</kbd> -->
+        </div>
+        <div data-key="77" class="key ride">
+          <!-- <kbd>M</kbd> -->
+        </div>
+        <div data-key="78" class="key ride">
+          <!-- <kbd>N</kbd> -->
+        </div>
+        <div data-key="79" class="key crash">
+          <!-- <kbd>O</kbd> -->
+        </div>
+        <div data-key="80" class="key crash">
+          <!-- <kbd>P</kbd> -->
+        </div>
+        <div data-key="81" class="key tom-low">
+          <!-- <kbd>Q</kbd> -->
+        </div>
+        <div data-key="82" class="key tom-low">
+          <!-- <kbd>R</kbd> -->
+        </div>
+        <div data-key="83" class="key tom-mid">
+          <!-- <kbd>S</kbd> -->
+        </div>
+        <div data-key="84" class="key tom-mid">
+          <!-- <kbd>T</kbd> -->
+        </div>
+        <div data-key="85" class="key tom-high">
+          <!-- <kbd>U</kbd> -->
+        </div>
+        <div data-key="86" class="key tom-high">
+          <!-- <kbd>V</kbd> -->
+        </div>
+        <div data-key="87" class="key kick2">
+          <!-- <kbd>W</kbd> -->
+        </div>
+        <div data-key="88" class="key kick2">
+          <!-- <kbd>X</kbd> -->
+        </div>
+        <div data-key="89" class="key kick">
+          <!-- <kbd>Y</kbd> -->
+        </div>
+        <div data-key="90" class="key kick">
+          <!-- <kbd>Z</kbd> -->
+        </div>
+      </div>
+
+
+        <!-- old -->
+        <!-- <div data-key="74" class="key snare">
           <kbd>J</kbd>
         </div>
         <div data-key="66" class="key kick">
@@ -115,8 +193,8 @@
         </div>
         <div data-key="75" class="key hihat-close">
           <kbd>K</kbd>
-        </div>
-      </div>
+        </div> -->
+     
     </section>
   </main>
   <div id="svg-container">
@@ -127,6 +205,35 @@
       <circle cx="50" cy="50" r="50"/>
     </svg> -->
   </div>
+ 
+  <audio data-key="65" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
+  <audio data-key="66" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
+  <audio data-key="67" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
+  <audio data-key="68" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+  <audio data-key="69" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+  <audio data-key="70" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
+  <audio data-key="71" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
+  <audio data-key="72" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
+  <audio data-key="73" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"></audio>
+  <audio data-key="74" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"></audio>
+  <audio data-key="75" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"></audio>
+  <audio data-key="76" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"></audio>
+  <audio data-key="77" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"></audio>
+  <audio data-key="78" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"></audio>
+  <audio data-key="79" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/crash.wav"></audio>
+  <audio data-key="80" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/crash.wav"></audio>
+  <audio data-key="81" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-low.wav"></audio>
+  <audio data-key="82" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-low.wav"></audio>
+  <audio data-key="83" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-mid.wav"></audio>
+  <audio data-key="84" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-mid.wav"></audio>
+  <audio data-key="85" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-high.wav"></audio>
+  <audio data-key="86" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-high.wav"></audio>
+  <audio data-key="87" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+  <audio data-key="88" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+  <audio data-key="89" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+  <audio data-key="90" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
+
+<!--  
   <audio data-key="74" src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3"></audio>
   <audio data-key="66" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
   <audio data-key="86" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"></audio>
@@ -137,7 +244,7 @@
   <audio data-key="69" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/crash.wav"></audio>
   <audio data-key="82" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"></audio>
   <audio data-key="73" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"></audio>
-  <audio data-key="75" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-close.wav"></audio>
+  <audio data-key="75" src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-close.wav"></audio> -->
 </body>
 <script src="demo.js"></script>
 

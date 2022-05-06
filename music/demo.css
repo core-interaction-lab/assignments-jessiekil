@@ -166,56 +166,13 @@ kbd{
     font-family: 'mess-reg';
 }
 
-/* guides list font */
+.greenbar{
+    max-width: 330%;
+    margin-top: 65%;
+    align-items: center;
+    margin-left: -7%;
+}
 
-
-/* VIDEO BACKGROUND */
-/* 
-#myVideo {
-        position:absolute;
-        z-index:-999;
-        top:0;
-        left:0;
-        width:100%; 
-        height:100vh;
-  } */
-
-/* END VIDEO */
-
-
-/* RECORD ROTATE */
-.rotate {
-    animation: rotation 8s infinite linear;
-    max-width: 200%;
-    margin-left: -70%;
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-  .rotate2 {
-    animation: rotation 8s infinite linear;
-    max-width: 200%;
-    margin-right: -70%;
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }  
-/* END OF RECORD ROTATE */
-
-
-/* WRAPPER FOR RECORDS */
 
 .column {
     float: left;
@@ -245,8 +202,8 @@ kbd{
     height: 50px;
     width: 200px;
     border: 1px solid #fff; 
-    margin-left: 34%;
-    margin-top: -10%;
+    margin-left: 35%;
+    margin-top: 35%;
 
   }
 .button1:hover {
@@ -267,9 +224,9 @@ kbd{
     height: 50px;
     width: 200px;
     border: 1px solid #fff; 
-    margin-left: 50%;
+    margin-left: 52%;
     z-index: 4;
-    margin-top: -10%;
+    margin-top: 35%;
   }
 .button2:hover {
     background-color:#FF0099;
@@ -356,6 +313,159 @@ kbd{
         transform: none;
     }
     to {
-        transform:scale(3.2);
+        transform:scale(3.0);
     }
 }
+
+
+
+.gif3{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif3-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+.gif4{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif4-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+.gif5{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif5-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+.gif6{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif6-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+.gif7{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif7-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+.gif8{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif8-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+.gif9{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif9-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+.gif10{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 1s ease gif1-anime;
+}
+
+
+@keyframes gif10-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+

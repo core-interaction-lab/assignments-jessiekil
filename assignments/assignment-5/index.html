@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TODO List</title>
+        <title>WELCOME!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.png" type="image/png"/>
-        <body>
-            <div id="myDIV" class="header">
-              <h2 style="margin:5px">CREATE YOUR OWN TODO LIST</h2>
-              <input type="text" id="myInput" placeholder="Title...">
-              <span onclick="newElement()" class="addBtn">Add</span>
-            </div>
-            
-            <ul id="myUL">
-              
-            </ul>
-            <script src="main.js"></script>
-        </body>
+        <link rel="icon" href="madlibs.png" type="image/png"/>
+        <script src="main.js"></script>
+        <meta charset="utf-8" />
+		<title>Create your own sentence!</title>
+</head>
+
+<body>
+		<h1>Mad Libs</h1>
+<!--Create a div for the game-->
+		<div id="forms"> 
+				<p>Noun:</p>
+<!--Give each input an id-->
+				<input type="text" id="noun">
+				<p>Give me an Adjective:</p>
+				<input type="text" id="adjective">
+				<p>Give me a Verb (past-tense)</p>
+				<input type="text" id="verb">
+				<p>Someone's name:</p>
+				<input type="text" id="name">
+				<p>Choose between: what, how, wow: </p>
+				<input type="text" id="exclamation">
+
+		</div>
+<!--Use a button to launch the function-->
+		<button id="lib-button" onclick="madLibs()">lib it!</button>
+		<div id="story"></div>
+
+
+</body>
     </head>
 </html>
