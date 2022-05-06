@@ -46,12 +46,14 @@ var x = document.getElementById("myAudio");
 	// }
 
 function playAudio() { 
-  x.play(); 
+	x.volume=0.5;
+	x.play(); 
 } 
 
 function pauseAudio() { 
-  x.pause(); 
+	x.pause(); 
 
+  
 
 } 
 function main() {
