@@ -32,7 +32,16 @@ var x = document.getElementById("myAudio");
 		Image9.src = "twocircles.png"
 
 		Image10= new Image(10,10)
-		Image10.src = "orange.png"
+		Image10.src = "wow.png"
+
+		Image11= new Image(10,10)
+		Image11.src = "abstract.png"
+
+		Image12= new Image(10,10)
+		Image12.src = "triple.png"
+
+		Image13= new Image(10,10)
+		Image13.src = "balls.png"
 
 
 
@@ -46,24 +55,30 @@ var x = document.getElementById("myAudio");
 	// }
 
 function playAudio() { 
-	x.volume=0.5;
+	x.volume=0.4;
 	x.play(); 
 } 
 
 function pauseAudio() { 
 	x.pause(); 
+}
 
-  
+function replayAudio() {
+	x.volume=0.4;
+	x.pause();
+	x.currentTime=0;
+	x.play();
+}
 
-} 
+
 function main() {
 	const playingClass = 'playing',
 		crashRide = document.getElementById('crash-ride'),
 		hiHatTop = document.getElementById('hihat-top');
 
 		const animateSvg = (btn, currentImg, currentAnim) => {
-			const animations = ['gif1', 'gif2', 'gif3', 'gif4', 'gif5', 'gif6', 'gif7', 'gif8', 'gif9', 'gif10'];
-			const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10];
+			const animations = ['gif1', 'gif2', 'gif3', 'gif4', 'gif5', 'gif6', 'gif7', 'gif8', 'gif9', 'gif10','gif11','gif12','gif13','gif14'];
+			const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13];
 			//const currentImg = images[Math.floor(Math.random()*images.length)];
 			// const currentAnim = animations[Math.floor(Math.random()*animations.length)];
 			const svgContainer = document.getElementById('svg-container');
@@ -137,7 +152,7 @@ function main() {
 		console.log(keyCode);
 		switch(keyCode) {
 			case 65:
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image1, 'gif7');
 				break;
 			case 66:
 				//callGif2(e);
@@ -145,7 +160,7 @@ function main() {
 				break;
 			case 67:
 				//callGif2(e);
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image1, 'gif14');
 				break;
 			case 68:
 				animateCrashOrRide(e, Image2, 'gif2');
@@ -154,24 +169,24 @@ function main() {
 				animateCrashOrRide(e, Image2, 'gif2');
 				break;
 			case 70:
-				animateCrashOrRide(e, Image3, 'gif3');
+				animateCrashOrRide(e, Image1, 'gif3');
 				break;
 			case 71:
 				animateCrashOrRide(e, Image4, 'gif4');
 				break;
 			case 72:
 				//callGif2(e);
-				animateCrashOrRide(e, Image4, 'gif4');
+				animateCrashOrRide(e, Image13, 'gif13');
 				break;
 			case 73:
 				//callGif2(e);
 				animateCrashOrRide(e, Image5, 'gif5');
 				break;
 			case 74:
-				animateCrashOrRide(e, Image6, 'gif6');
+				animateCrashOrRide(e, Image5, 'gif5');
 				break;
 			case 75:
-				animateCrashOrRide(e, Image7, 'gif7');
+				animateCrashOrRide(e, Image5, 'gif5');
 				break;
 			case 76:
 				animateCrashOrRide(e, Image7, 'gif7');
@@ -181,26 +196,26 @@ function main() {
 				break;
 			case 78:
 				//callGif2(e);
-				animateCrashOrRide(e, Image4, 'gif4');
+				animateCrashOrRide(e, Image3, 'gif3');
 				break;
 			case 79:
 				//callGif2(e);
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image11, 'gif11');
 				break;
 			case 80:
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image10, 'gif10');
 				break;
 			case 81:
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image12, 'gif12');
 				break;
 			case 82:
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image12, 'gif12');
 				break;
 			case 83:
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image13, 'gif13');
 				break;
 			case 84:
-				animateCrashOrRide(e, Image1, 'gif1');
+				animateCrashOrRide(e, Image13, 'gif13');
 				break;
 			case 85:
 				animateCrashOrRide(e, Image8, 'gif8');
@@ -209,7 +224,7 @@ function main() {
 				animateCrashOrRide(e, Image8, 'gif8');
 				break;
 			case 87:
-				animateCrashOrRide(e, Image9, 'gif9');
+				animateCrashOrRide(e, Image10, 'gif10');
 				break;
 			case 88:
 				animateCrashOrRide(e, Image9, 'gif9');
@@ -218,7 +233,7 @@ function main() {
 				animateCrashOrRide(e, Image10, 'gif10');
 				break;
 			case 90:
-				animateCrashOrRide(e, Image10, 'gif10');
+				animateCrashOrRide(e, Image7, 'gif7');
 				break;
 			
 		}	
@@ -255,6 +270,8 @@ function main() {
 
 	window.addEventListener('keydown', playSound);
 }
+
+
 
 main();
 // } 

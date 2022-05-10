@@ -75,7 +75,7 @@ var Nodes = {
     for( i = -10; i < this.canvas.width + 10; i += this.density ) {
 
       var line1 = {y: center - 17, originalY: center - 10, color: '#68FFB7'};
-      var line2 = {y: center - 17, originalY: center - 25, color: '#FF0099'};
+      var line2 = {y: center - 17, originalY: center - 25, color: '#00ff73'};
 
       line1["x"] =  i;
       line1["originalX"] = i;

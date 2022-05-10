@@ -8,6 +8,24 @@
 }
 
 @font-face {
+    font-family: 'ios-bold';
+    src: url('Iosevka-Extrabold.woff2') format('woff2'),
+        url('Iosevka-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ios';
+    src: url('Iosevka.woff2') format('woff2'),
+        url('Iosevka.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'mess-reg';
     src: url('Messapia-Regular.woff2') format('woff2'),
         url('Messapia-Regular.woff') format('woff');
@@ -32,6 +50,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: black;
+    overflow: hidden;
 }
 
 *{
@@ -43,12 +62,15 @@ body {
 	text-align: center;
 }
 
+
+
 .title {
-	font-family: 'monkeys';
+	font-family: 'ios';
 	text-align: center;
 	font-size: 3.2em;
-	color: white;
-	text-shadow: 6px 1px 1px #7b7b7b;
+    font-weight: 300;
+	color: #00ff73;
+    margin-top: 0%;
 }
 
 
@@ -60,24 +82,38 @@ body {
 
 
 .key.kick {
-	top: 200px;
+	top: 400px;
     right: 300px;
 }
 
 .key.kick2 {
-    top: 200px;
-    right: 480px;
+    top: 400px;
+    right: 880px;
 
 }
 
 .key.snare {
-    top: 200px;
-    right: 660px;
+    top: 100px;
+    left: 600px;
+    margin-top: 20%;
 }
 
+.key.snare2 {
+    top: 33vh;
+    left: 1000px;
+    margin-top: 10%;
+}
+
+.key.snare3 {
+    top: 33vh;
+    left: 300px;
+    margin-top: 10%;
+}
+
+
 .key.tom-high {
-    top: 200px;
-    left: 270px;
+    top: 600px;
+    left: 200px;
 }
 
 .key.tom-mid {
@@ -95,20 +131,58 @@ body {
     left: 440px;
 }
 
-.key.ride {
+.key.crash1 {
     top: 405px;
-    right: 660px;
+    left: 150px;
+}
+
+.key.ride {
+    top: 325px;
+    right: 800px;
+}
+
+.key.ride1 {
+    top: 625px;
+    right: 800px;
+}
+
+.key.ride2 {
+    top: 325px;
+    right: 800px;
 }
 /* R */
 
 .key.hihat-open {
-    top: 405px;
+    top: 205px;
     right: 300px;
+
+}
+
+.key.hihat-open2 {
+    top: 505px;
+    right: 1070px;
 }
 /* I */
 
+.key.hihat-open3 {
+    top: 295px;
+    right: 870px;
+}
+/* I */
+
+.key.hihat-close1 {
+    margin-top: -115px;
+    right: 1010px;
+    position: absolute;
+}
+.key.hihat-close2 {
+    margin-top: -190px;
+    right: 788px;
+    position: absolute;
+}
+
 .key.hihat-close {
-    top: 405px;
+    margin-top: 10px;
     right: 480px;
 }
 /* K */
@@ -168,7 +242,7 @@ kbd{
 
 .greenbar{
     max-width: 330%;
-    margin-top: 65%;
+    margin-top: 69%;
     align-items: center;
     margin-left: -7%;
 }
@@ -189,6 +263,36 @@ kbd{
 
 
 /* BUTTON */
+
+.home{
+    color: black;
+    font-family: 'mess-reg';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: fixed;
+    display: block;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 0.5%;
+    background-color: transparent;
+    margin-left: 1%;
+}
+
+.home img{
+    width: 60px;
+    height: 60px;
+}
+
+.home img:hover {
+    background-color:#FF0099;
+    transition: 0.7s;
+    color: #68FFB7;
+}
+
 .button1 {
     color: black;
     font-family: 'mess-reg';
@@ -199,18 +303,33 @@ kbd{
     line-height: 50px;
     position: fixed;
     display: block;
-    height: 50px;
-    width: 200px;
-    border: 1px solid #fff; 
-    margin-left: 35%;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 29%;
     margin-top: 35%;
+    background-color: transparent;
+  }
+
+  .button1 img{
+    max-width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
 
   }
-.button1:hover {
+
+  .button1:hover {
     background-color:#FF0099;
     transition: 0.7s;
     color: #68FFB7;
 }
+
+/* .button1:hover {
+    background-color:#FF0099;
+    transition: 0.7s;
+    color: #68FFB7;
+} */
 .button2 {
     color: black;
     font-family: 'mess-reg';
@@ -220,18 +339,60 @@ kbd{
     text-transform: uppercase;
     line-height: 50px;
     position: fixed;
-    display: block;
-    height: 50px;
-    width: 200px;
-    border: 1px solid #fff; 
-    margin-left: 52%;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 47%;
     z-index: 4;
     margin-top: 35%;
+}
+
+.button2 img{
+    max-width: 60px;
+    height: 60px;
+    margin-top: 10px;
+
+}
+
+
+  button{
+    all: unset;
   }
+
 .button2:hover {
     background-color:#FF0099;
     transition: 0.7s;
     color: #68FFB7;
+    
+}
+/* END OF BUTTON */
+
+.button3 {
+    color: black;
+    font-family: 'mess-reg';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: fixed;
+    display: block;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 65%;
+    z-index: 4;
+    margin-top: 35%;
+  }
+
+.button3 img{
+    max-width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.button3:hover {
+    background-color:#FF0099;
+    transition: 0.7s;
 }
 /* END OF BUTTON */
 
@@ -281,15 +442,35 @@ kbd{
 
 
 
+
 .gif1{
     display: block;
-    width: 140px;
+    width: 180px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.6s ease gif1-anime;
 }
 
 
 @keyframes gif1-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+        /* translate:(50px,50%);
+        animation: animate 2s ease-in-out infinite; */
+    }
+}
+
+.gif14{
+    display: block;
+    width: 180px;
+    height: 150px;
+    animation: 0.8s ease gif1-anime;
+}
+
+
+@keyframes gif14-anime {
     from {
         transform: none;
     }
@@ -302,9 +483,9 @@ kbd{
 
 .gif2{
     display: block;
-    width: 140px;
-    height: 150px;
-    animation: 1s ease gif2-anime;
+    width: 130px;
+    height: 100px;
+    animation: 0.7s ease gif2-anime;
 }
 
 
@@ -323,7 +504,7 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.7s ease gif3-anime;
 }
 
 
@@ -332,7 +513,7 @@ kbd{
         transform: none;
     }
     to {
-        transform:scale(2.2);
+        transform:scale(5.2);
     }
 }
 
@@ -342,7 +523,7 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.65s ease gif4-anime;
 }
 
 
@@ -351,7 +532,7 @@ kbd{
         transform: none;
     }
     to {
-        transform:scale(2.2);
+        transform:scale(5);
     }
 }
 
@@ -361,7 +542,7 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.7s ease gif1-anime;
 }
 
 
@@ -379,7 +560,7 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.7s ease gif1-anime;
 }
 
 
@@ -396,18 +577,21 @@ kbd{
 
 .gif7{
     display: block;
-    width: 140px;
+    width: 200px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.4s ease gif1-anime;
 }
 
 
 @keyframes gif7-anime {
     from {
-        transform: none;
+        top: 80vh;
+        left: 600px;
     }
     to {
-        transform:scale(2.2);
+        top: 60vh;
+        left: 600px;
+    
     }
 }
 
@@ -417,7 +601,7 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.7s ease gif1-anime;
 }
 
 
@@ -436,7 +620,7 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.7s ease gif1-anime;
 }
 
 
@@ -455,7 +639,29 @@ kbd{
     display: block;
     width: 140px;
     height: 150px;
-    animation: 1s ease gif1-anime;
+    animation: 0.7s ease gif10-anime;
+}
+
+
+@keyframes gif10-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(10.2);
+    }
+}
+
+
+
+
+
+
+.gif11{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 0.7s ease gif1-anime;
 }
 
 
@@ -467,5 +673,51 @@ kbd{
         transform:scale(2.2);
     }
 }
+
+
+
+
+.gif12{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 0.7s ease gif1-anime;
+}
+
+
+@keyframes gif10-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+
+.gif13{
+    display: block;
+    width: 140px;
+    height: 150px;
+    animation: 0.7s ease gif1-anime;
+}
+
+
+@keyframes gif10-anime {
+    from {
+        transform: none;
+    }
+    to {
+        transform:scale(2.2);
+    }
+}
+
+
+
+
+
+
 
 
