@@ -35,7 +35,7 @@ var x = document.getElementById("myAudio");
 		Image10.src = "wow.png"
 
 		Image11= new Image(10,10)
-		Image11.src = "abstract.png"
+		Image11.src = "balls.png"
 
 		Image12= new Image(10,10)
 		Image12.src = "triple.png"
