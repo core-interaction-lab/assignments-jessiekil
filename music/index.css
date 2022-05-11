@@ -25,6 +25,24 @@
     font-display: swap;
 }
 
+@font-face {
+  font-family: 'ios-bold';
+  src: url('Iosevka-Extrabold.woff2') format('woff2'),
+      url('Iosevka-Extrabold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ios';
+  src: url('Iosevka.woff2') format('woff2'),
+      url('Iosevka.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 * {
     padding: 0px;
@@ -39,19 +57,22 @@ body {
    }
 
 .title{
-    font-family: 'monkeys';
+    font-family: 'ios';
     color: white;
     font-size: 175px;
-    margin-left: 7%;
+    margin-left: 22%;
+    font-weight: 1200;
+    letter-spacing: -5px;
     margin-top: 10%;
 }
 
 .button {
     color: #fff;
-    font-family: 'mess-reg';
+    font-family: 'ios';
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    font-size: 30px;
     text-transform: uppercase;
     line-height: 50px;
     margin-left: 43%;

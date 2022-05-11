@@ -70,7 +70,9 @@ body {
 	font-size: 3.2em;
     font-weight: 300;
 	color: #00ff73;
-    margin-top: 0%;
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 1.5%;
 }
 
 
@@ -242,7 +244,7 @@ kbd{
 
 .greenbar{
     max-width: 330%;
-    margin-top: 69%;
+    margin-top: 90%;
     align-items: center;
     margin-left: -7%;
 }
@@ -264,7 +266,7 @@ kbd{
 
 /* BUTTON */
 
-.home{
+.home {
     color: black;
     font-family: 'mess-reg';
     font-weight: bold;
@@ -273,24 +275,40 @@ kbd{
     text-transform: uppercase;
     line-height: 50px;
     position: fixed;
-    display: block;
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    margin-top: 0.5%;
-    background-color: transparent;
-    margin-left: 1%;
+    margin-left: -1%;
+    z-index: 4;
+    margin-top: -2%;
 }
 
-.home img{
-    width: 60px;
+.green3{
+    max-width: 60px;
     height: 60px;
+    margin-left: 20%;
+    margin-top: 10px;
+    position: absolute;
+  }
+
+  .pink3 {
+      opacity: 0;
+      max-width: 60px;
+      height: 60px;
+      margin-left: 20%;
+      margin-top: 10px;
+      position: absolute;
+  }
+
+
+  .home:hover .green3 {
+    transition: 0.7s;
+    opacity: 0;
 }
 
-.home img:hover {
-    background-color:#FF0099;
+    .home:hover .pink3 {
     transition: 0.7s;
-    color: #68FFB7;
+    opacity: 100;
 }
 
 .button1 {
@@ -307,22 +325,36 @@ kbd{
     width: 90px;
     border-radius: 50%;
     margin-left: 29%;
-    margin-top: 35%;
+    margin-top: 40%;
     background-color: transparent;
   }
 
-  .button1 img{
+  .green{
     max-width: 60px;
     height: 60px;
     margin-left: 10px;
     margin-top: 10px;
-
+    position: absolute;
   }
 
-  .button1:hover {
-    background-color:#FF0099;
+  .pink {
+      opacity: 0;
+      max-width: 60px;
+      height: 60px;
+      margin-left: 10px;
+      margin-top: 10px;
+      position: absolute;
+  }
+
+
+  .button1:hover .green {
     transition: 0.7s;
-    color: #68FFB7;
+    opacity: 0;
+}
+
+    .button1:hover .pink {
+    transition: 0.7s;
+    opacity: 100;
 }
 
 /* .button1:hover {
@@ -342,29 +374,43 @@ kbd{
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    margin-left: 47%;
+    margin-left: 45%;
     z-index: 4;
-    margin-top: 35%;
+    margin-top: 40%;
 }
 
-.button2 img{
+.green1{
     max-width: 60px;
     height: 60px;
+    margin-left: 20%;
     margin-top: 10px;
+    position: absolute;
+  }
 
+  .pink1 {
+      opacity: 0;
+      max-width: 60px;
+      height: 60px;
+      margin-left: 20%;
+      margin-top: 10px;
+      position: absolute;
+  }
+
+
+  .button2:hover .green1 {
+    transition: 0.7s;
+    opacity: 0;
 }
 
+    .button2:hover .pink1 {
+    transition: 0.7s;
+    opacity: 100;
+}
 
-  button{
+button{
     all: unset;
   }
 
-.button2:hover {
-    background-color:#FF0099;
-    transition: 0.7s;
-    color: #68FFB7;
-    
-}
 /* END OF BUTTON */
 
 .button3 {
@@ -376,30 +422,40 @@ kbd{
     text-transform: uppercase;
     line-height: 50px;
     position: fixed;
-    display: block;
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    margin-left: 65%;
+    margin-left: 60%;
     z-index: 4;
-    margin-top: 35%;
-  }
+    margin-top: 40%;
+}
 
-.button3 img{
+.green2{
     max-width: 60px;
     height: 60px;
+    margin-left: 20%;
     margin-top: 10px;
-}
-.button3:hover {
-    background-color:#FF0099;
+    position: absolute;
+  }
+
+  .pink2 {
+      opacity: 0;
+      max-width: 60px;
+      height: 60px;
+      margin-left: 20%;
+      margin-top: 10px;
+      position: absolute;
+  }
+
+  .button3:hover .green2 {
     transition: 0.7s;
+    opacity: 0;
 }
-/* END OF BUTTON */
 
-
-
-
-
+    .button3:hover .pink2 {
+    transition: 0.7s;
+    opacity: 100;
+}
 
 
 #svg-container {
